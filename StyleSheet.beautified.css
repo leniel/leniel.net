@@ -18,7 +18,8 @@
 }
 
 .post-body a {
-    border: none !important;
+    border: none;
+    border: none
 }
 
 .PageList ul {
@@ -149,8 +150,8 @@ blockquote {
     display: block;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: 60px;
-    padding-top: 13px;
+    margin-left: 25px;
+    padding-top: 1px;
     padding-right: 0;
     padding-bottom: 0;
     background: url(http://www.blogblog.com/tictac_blue/quotes.gif) no-repeat top left;
