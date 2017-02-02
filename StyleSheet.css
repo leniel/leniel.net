@@ -9,6 +9,10 @@
  * Moved the StyleSheet file to GitHub on 1 February 2017
 */
 
+div#ContactForm1 {
+    display: none;
+}
+
 #SkypeButton_Call_lenielmacaferi_1_paraElement {
     font-size: 0 !important
 }
@@ -157,7 +161,8 @@ blockquote {
     color: #666;
     text-indent: 40px;
     font-style: italic;
-    font-size: 100%
+    font-size: 100%;
+    padding:
 }
 
 abbr,
@@ -696,6 +701,10 @@ ul.gbw a.gbw-hashtag {}
 
 #plusone {
     margin-right: -17px
+}
+
+.PlusOne {
+    width: 83px;
 }
 
 .cse .gsc-control-cse,
