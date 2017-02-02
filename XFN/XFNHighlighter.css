@@ -1,0 +1,100 @@
+  div.xfnFriendInfoBox
+  {
+    text-align: left;
+    z-index: 1000;
+    border: solid 1px black;
+    background-color: #faf4cf;
+    color: #333;
+    width: 200px;
+    font-size: smaller;
+    font-family: Arial, helvetica, Sans-Serif;
+    padding-left: 4px;
+  }
+
+  div.xfnFriendInfoBox h3
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  div.xfnFriendInfoBox ul
+  {
+    margin: 0;
+  }
+
+  div.xfnFriendInfoBox ul li
+  {
+    margin: 0;
+  }
+
+  a.xfnRelationship
+  {
+    /*
+      padding-right: 13px;
+    background: url(../images/friends.png) no-repeat right;
+    */
+    padding-right: 26px;
+    background: url(http://lh4.ggpht.com/cDocNNfHGOyYOOvBDVQjOfQEmC65QqFWd3Ct96IxkN0ZqmOcGH4Dn1L4Ait9LxWPJK8Sx7fQ5mC-wQjiHmMOl7Q=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="colleague"],
+  a.xfnRelationship[rel~="co-worker"]
+  {
+    padding-right: 21px;
+    background: url(http://lh4.ggpht.com/yTOaI9jbBebZ8k7jqivO5kmt7yd38Tzy3eExXE02HUOoIkGkVhFI3UwtPixHf9i0Ij_G1ObE9BGt6K66ks-NLP0=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="colleague"][rel~="met"],
+  a.xfnRelationship[rel~="co-worker"][rel~="met"]
+  {
+    padding-right: 26px;
+    background: url(http://lh6.ggpht.com/PQR8BNMAqYF22lJ2r16WBtiiTiEBaaMN4ytUKV5KUuHW1Tn4pOWMBtdHvlM4bkepuOm4nA5bD-VzyfP8E1sCwBk=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="friend"]
+  {
+    padding-right: 21px;
+    background: url(http://lh4.ggpht.com/cDocNNfHGOyYOOvBDVQjOfQEmC65QqFWd3Ct96IxkN0ZqmOcGH4Dn1L4Ait9LxWPJK8Sx7fQ5mC-wQjiHmMOl7Q=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="friend"][rel~="met"]
+  {
+    padding-right: 26px;
+    background: url(http://lh4.ggpht.com/5bI8NZaXkqMVOjhM-SiY8aRO0-AxxRlquHVYQMKRI6jouldXROi9h18CQze5hniH9LboftfF88e8FWF2rEn4u6U=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="sweetheart"]
+  {
+    padding-right: 21px;
+    background: url(http://lh3.ggpht.com/UGX6PxSWr1R-rP5JJjQ6PQz15jNgILG_RVFRxmd--9ubOHU3iX-4BA6HulTUCHLeSMOoyDDBO23RIQSdTxxOrpA=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="sweetheart"][rel~="met"]
+  {
+    padding-right: 26px;
+    background: url(http://lh3.ggpht.com/UGX6PxSWr1R-rP5JJjQ6PQz15jNgILG_RVFRxmd--9ubOHU3iX-4BA6HulTUCHLeSMOoyDDBO23RIQSdTxxOrpA=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="child"]
+  {
+    padding-right: 21px;
+    background: url(http://lh3.ggpht.com/ANylzCnN2Iyq_XfLI5F7jshbAzt_yQ2Ado5bjJ5MhhFSgDJzvK-MIq1eFI-7Vg67ku8C8hvfmQRTa8vttV3vWnI=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="parent"]
+  {
+    padding-right: 21px;
+    background: url(http://lh4.ggpht.com/jxDAk4B4RVBV4SIjwly3geOsEnPfVQTcofEQpQrSG5Cej33yG0woOOIDyIBAH9eBwo8MJwp_Nn86btj_kOOAUZA=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="spouse"]
+  {
+    padding-right: 21px;
+    background: url(http://lh6.ggpht.com/HEPp-_YGYudlN4EL4bE7oqByc1b9cxNLWGLwtV1qrPEtr2kN9uuu6vJAhLr94LE_Pk_hzrsaT5B3wJQf46ijAoU=s512) no-repeat right;
+  }
+
+  a.xfnRelationship[rel~="me"]
+  {
+    padding-right: 21px;
+    background: url(http://docs.google.com/uc?id=0B4SVxswDPXtwOTVjZTY4NTYtOThkNi00MGZhLWFkYTAtNzE0NjFhNjA0MjZi&hl=en) no-repeat right;
+  }

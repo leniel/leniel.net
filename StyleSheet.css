@@ -1,0 +1,1654 @@
+/* 
+ * Blogger Template Style
+ * Name:   TicTac (Black)
+
+ * Author: Leniel Macaferi
+ * URL:    http://leniel.net
+ * Date:   20 December 2007
+ * Updated to external StyleSheet: 31 May 2009
+ * Moved the StyleSheet file to Google Docs on 23 January 2009
+*/
+
+/* Hides Blogger's NavBar */
+#navbar-iframe {display: none !important;}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-size: 9.5pt;
+  text-align: center;
+  color: #000000;
+  background: white;
+}
+
+blockquote
+{ 
+  display:block;
+  text-indent:40px;
+  font-style:italic;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 25px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 1px;
+  font-size: 100%;
+  color: #666666;
+  background: url(http://www.blogblog.com/tictac_blue/quotes.gif) no-repeat top left;
+}
+
+abbr, acronym
+{
+  cursor: help;
+  font-style: normal;
+  border-bottom: 1px dotted;
+}
+
+pre
+{
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre span.toc
+{
+  font-family: "Lucida Console", "Bitstream Vera Sans Mono", "Andale Mono", "Lucida Grande";
+  font-size: 100%;
+  line-height:200%;
+}
+
+hr
+{
+  /* display: none; */
+}
+
+img
+{
+  border: none;
+}
+
+/* Unordered list style */
+
+ul
+{
+  list-style: none;
+  margin-left: 10px;
+  padding: 0;
+  margin-top: 0px;
+}
+
+li
+{
+  padding-left: 14px;
+  margin-bottom: 3px;
+ /* background: url(http://www.blogblog.com/tictac_blue/tictac_blue.gif) no-repeat */;
+}
+
+/* Layout structure */
+
+#outer-wrapper
+{
+  width: 800px;
+  margin: 0px auto 0;
+  text-align: left;
+  font: normal normal 102% Arial, sans-serif;
+  /* background: url(http://www.blogblog.com/tictac_blue/tile.gif) repeat-y; */
+}
+
+#content-wrapper
+{
+  margin-left: 0px; /* to avoid the border image */
+  width: 800px;
+}
+
+#main
+{
+  float: left;
+  width: 525px;
+  margin-top: 2px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0px;
+  padding-bottom: 0;
+  padding-left: 0px;
+  line-height: 1.5em;
+  /*word-wrap: break-word; */ /* fix for long text breaking sidebar float in IE */
+  /*overflow: hidden; */     /* fix for long non-text content breaking IE sidebar float */
+}
+
+#sidebar
+{
+  margin:0px;
+  padding-left:0px;
+  border-left: 1px dotted black;
+  float: right;
+  width: 270px;
+  padding-top: 12px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  font-size: 85%;
+  line-height: 1.4em;
+  color: #000000;
+  /* background: url(http://www.blogblog.com/tictac_blue/sidebar_bg.gif) no-repeat; */
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+
+/* Headings */
+
+#header-wrapper
+{
+  margin: 0;
+  padding: 0;
+  font: normal normal 100% Arial, sans-serif;
+  background: url(http://farm3.static.flickr.com/2045/2187931461_09e72e0b17_o.png)  no-repeat top;
+  position: relative;
+}
+
+#header
+{
+  margin: 0px;
+  padding-top: 30px! important;
+  padding-bottom: 10px! important;
+  padding-right: 10px;
+  padding-left: 110px;
+  color: #FFFFFF;
+}
+
+#header h1
+{ 
+  display:inline;
+  font-size: 200%;
+  text-shadow: #4F73B6 2px 2px 2px;
+}
+
+#header h1 a
+{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#header p
+{
+  margin-bottom:0px! important;
+}
+
+#header p a:link
+{
+  text-decoration: none;
+  color: White;
+  font-weight:bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#header p a:visited
+{
+  text-decoration: none;
+  color: White;
+  font-weight:bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#header p a:hover
+{
+  text-decoration: none;
+  color: Black;
+  font-weight:bold;
+  background-color: White;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+blink a
+{
+  text-decoration: none;
+  color: White;
+}
+
+h2
+{
+  margin:1.5em 0 .75em;
+  font:normal normal 95% Arial, sans-serif;
+  color:#666666;
+}
+
+h4
+{
+  color:black;
+  font-size: 13pt;
+  margin-bottom:0px;
+}
+
+/* Main column */
+
+/* Posts */
+
+h2.date-header
+{
+  margin:0;
+  padding:0;
+}
+
+h2.date-header
+{
+  margin:0;
+  padding:0;
+}
+
+h2.post-author
+{
+  margin:0 0 .5em;
+  padding-top:0;
+}
+
+.byline-author
+{
+  margin: 0;
+  padding: 0 0 0 0;
+  color: #666666;
+}  
+
+.post
+{
+  margin:.5em 0 1.5em 0;
+  border-bottom: 1px dotted black;
+  padding-bottom:1.5em;
+}
+
+.post-body a
+{
+  text-decoration: none;
+}
+
+.post ol
+{
+  float: left;
+  width: 525px;
+  margin-left: 0px;
+  padding-left: 0;
+  text-indent: 0;
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-top: inherit;
+  margin-bottom: 1em;
+}
+
+.post ol li
+{
+  margin-left: 25px;
+  padding: 0px;
+  text-indent: 0;
+  list-style-type: decimal;
+  list-style-position: outside;
+  font-weight:normal;
+  margin-top: 1em;
+}
+
+.post ul li
+{
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.post-body
+{
+  margin-right: 4px;
+  padding-top: 10px;
+}
+
+.post-body p
+{
+
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.post h3
+{
+  margin:.25em 0 0 0;
+  padding:0;
+  font-size:160%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#cc6600;
+}
+
+.post h3 a, .post h3 a:visited, .post h3 strong
+{
+  display:block;
+  text-decoration:none;
+  color:#cc6600;
+  font-weight:normal;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.post h3 strong, .post h3 a:hover
+{
+  color:#333333;
+}
+
+.post-footer
+{
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0px;
+  font-size: 100%;
+  color: #999999;
+  /* background: url(http://www.blogblog.com/tictac_blue/tictac_grey.gif) no-repeat; */
+}
+
+.post img.imgleft
+{
+  padding-right: 7px;
+  border: 0px;
+  float: left;
+}
+
+.post img.imgright
+{
+  padding-right: 7px;
+  padding-left: 7px;
+  border: 0px;
+  float: right;
+}
+
+.feed-links
+{
+  clear: both;
+  line-height: 2.5em;
+}
+
+#blog-pager-newer-link
+{
+  float: left;
+}
+
+#blog-pager-older-link
+{ 
+  float: right;
+}
+ 
+#blog-pager
+{   
+  text-align: center; 
+}
+
+/* Comment styles */
+
+#comments
+{
+  padding-top: 0px;
+  font-size: 85%;
+  line-height: 1.5em;
+  color: #666;
+  /* background: #eee url(http://www.blogblog.com/tictac_blue/comments_curve.gif) no-repeat top left; */
+}
+
+#comments h4
+{
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  padding-top: 8px;
+  padding-right: 0px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  font-family: "Lucida Grande", "Trebuchet MS";
+  font-size: 130%;
+  color: #666;
+  background: url(http://www.blogblog.com/tictac_blue/bubbles.gif) no-repeat 0px 0;
+  height: 29px !important; /* for most browsers */
+  height /**/:37px; /* for IE5/Win */
+}
+  
+#comments ul
+{
+  margin-left: 0;
+}
+
+#comments li
+{
+  background: none;
+  padding-left: 0;
+}
+
+.comment-body
+{
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 0px;
+  /* background: url(http://www.blogblog.com/tictac_blue/tictac_blue.gif) no-repeat 10px 5px; */
+}
+
+.comment-body p
+{
+  margin-bottom: 0;
+}
+
+.comment-author
+{
+  margin-top: 4px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0px;
+  padding-bottom: 0;
+  padding-left: 0px;
+  color: #999;
+  /* background: url(http://www.blogblog.com/tictac_blue/comment_arrow_blue.gif) no-repeat 25px 2px; */
+}
+
+.my-comment
+{
+  margin-top: 4px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  color: #999;
+  background: url(http://www.blogblog.com/tictac_blue/comment_arrow_blue.gif) no-repeat 15px 2px;
+  background-color: #333333; /* Background color*/
+  color: #FFFFFF; /* Text color*/
+}
+
+.my-comment a
+{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.comment-footer
+{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+  text-align:right;
+  margin-left: 0px;
+}
+
+.deleted-comment
+{
+  font-style:italic;
+  color:gray;
+}
+
+/* Sidebar */
+
+.sidebar h2
+{ 
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0px;
+  font: normal bold 130% 'Lucida Grande','Trebuchet MS';
+  color: #000000;
+  /*background: url(http://www.blogblog.com/tictac_blue/sidebar_icon.gif) no-repeat 10px 15px; */
+  /* height: 32px !important; */ /* for most browsers */
+  /* height: 57px; */ /* for IE5/Win */
+  padding: 0px;
+  margin: 0;
+}
+
+.sidebar .widget
+{
+  padding-top: 0px;
+  padding-right: 0;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  /* border-bottom: 1px dotted black; */
+  margin-top:0;
+}
+
+.sidebar li
+{
+  margin-left: -10px;
+  /* background: url(http://www.blogblog.com/tictac_blue/tictac_blue.gif) no-repeat; */
+}
+
+.profile-textblock
+{ 
+  clear: both;
+  margin-left: 0;
+}
+
+.profile-img
+{
+  float: left;
+  margin-top: 0;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0;
+  border: 0px solid #ddd;
+  padding: 0px;
+}
+
+/* Footer */
+
+.clear
+{
+  /* to fix IE6 padding-top issue */
+  clear: both;
+}
+
+#footer-wrapper
+{
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  font-size: 85%;
+  color: #ddd;
+  /* background: url(http://www.blogblog.com/tictac_blue/bottom_sill.gif) no-repeat bottom */;
+}
+
+#footer
+{
+  margin: 0;
+  padding-top: 0px;
+  padding-right: 320px;
+  padding-bottom: 0px;
+
+  padding-left: 95px;
+  /*background: url(http://www.blogblog.com/tictac_blue/bottom_sash.gif) no-repeat top */;
+}
+
+/* Page structure tweaks for layout editor wireframe */
+
+body#layout #outer-wrapper, body#layout #main, body#layout #sidebar
+{ 
+  padding-top: 0;
+  margin-top: 0;
+}
+
+body#layout #outer-wrapper, body#layout #content-wrapper
+{ 
+  margin-left: 42px; /* to avoid the border image */
+  width: 800px;
+}
+
+body#layout #sidebar
+{ 
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+body#layout #header, body#layout #footer, body#layout #main
+{
+  padding: 0;
+}
+
+body#layout #content-wrapper
+{ 
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Related Posts */
+
+#related_posts h2
+{
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 0;
+  padding-top: 8px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  background:url("http://www.blogblog.com/tictac_blue/bubbles.gif") no-repeat scroll 0px 0 transparent;
+  font-family: "Lucida Grande", "Trebuchet MS";
+  font-size: 110%;
+  color: #666;
+  font-weight:bold;
+}
+
+#related_posts ul li
+{
+  color: #888;
+  list-style: none;
+}
+
+/* PostRank */
+
+/* Hiding search box */ 
+#prwidget-0-search
+{
+  display:none;
+}
+
+.pr_widget-innerContainer h2
+{
+  display: none; /* Hiding header */  
+}
+
+ul.postrank-posts
+{
+  list-style-type:none;
+  margin-left:0;
+  font-size: 9pt;
+}
+
+ul.postrank-posts li
+{
+  margin-bottom:0.1em;
+  margin-left:0; 
+  margin-top:10px;
+  padding-left: 0px;
+}
+
+a.postrank-value
+{
+  color:#000;
+  width:3em;
+  display:block;
+  float:left;
+  clear:both;
+  text-align:center;
+  text-decoration: none;
+  margin-right:4px;
+}
+
+table.postrank-options
+{
+  display:none;
+}
+
+/* Recent comments */
+
+#Feed1_feedItemListDisplay
+{
+  font-size: 9pt;
+  margin-bottom:0.1em;
+  margin-left:0; 
+  margin-top:10px;
+  padding-left: 0px;
+}
+
+#Feed1_feedItemListDisplay ul
+{
+  list-style-type:none;
+  margin-left:0;
+  font-size: 9pt;
+}
+
+#Feed1_feedItemListDisplay li
+{
+  margin-bottom:0.1em;
+  margin-left:0; 
+  margin-top:10px;
+  padding-left: 0px;
+} 
+
+
+/* Label Cloud Styles
+----------------------------------------------- */
+#labelCloud {text-align:center;font-family:arial,sans-serif;}
+#labelCloud .label-cloud li{display:inline;background-image:none !important;padding:0 5px;margin:0;vertical-align:baseline !important;border:0 !important;}
+#labelCloud ul{list-style-type:none;margin:0 auto;padding:0;}
+#labelCloud a img{border:0;display:inline;margin:0 0 0 3px;padding:0}
+#labelCloud a{text-decoration:none; font-weight:bold; line-height: 1.5em;}
+#labelCloud a:hover{text-decoration:none; color:rgb(255,102,0); background:#DDDDDD}
+#labelCloud li a{}
+#labelCloud .label-cloud {}
+#labelCloud .label-count {padding-left:0.2em;font-size:9px;color:#000}
+#labelCloud .label-cloud li:before{content:"" !important}
+
+/* Tables */
+
+table.custom1
+{
+  border-style: solid;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  border-left: 0px;
+  border-right: 0px;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+}
+
+table.custom1 th
+{
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  text-align: left;
+  padding: 2px 0px 4px 4px;
+  font-weight: bold;
+}
+
+table.custom1 td
+{
+  border-width: 0px 0px 0px 0px;
+  padding: 4px;
+  border-style: solid solid solid solid;
+  background-color: #FFFFFF;
+}
+
+table.custom2
+{
+  border-width: 1px 1px 1px 1px;
+  border-spacing: 1px;
+  border-style: solid solid solid solid;
+  border-color: black black black black;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+}
+
+table.custom2 th
+{
+  border-width: 1px 1px 1px 1px;
+  padding: 4px;
+  border-style: solid solid solid solid;
+  border-color: gray gray gray gray;
+  text-align: left;
+}
+
+table.custom2 td
+{
+  border-width: 1px 1px 1px 1px;
+  padding: 4px;
+  border-style: solid solid solid solid;
+  border-color: gray gray gray gray;
+  background-color: #F9F9F9;
+}
+
+table.custom3
+{
+  border-width: 1px 1px 1px 1px;
+  border-spacing: 1px;
+  border-style: solid solid solid solid;
+  border-color: black black black black;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+}
+
+table.custom3 tr
+{
+  border: 0;
+  text-align: left;
+  padding: 2px 0px 4px 4px;
+}
+
+table.custom3 th
+{
+  border-width: 1px 1px 1px 1px;
+  padding: 4px;
+  border-style: solid solid solid solid;
+  text-align: left;
+  border-color: black black black black;
+  font-weight: normal;
+}
+
+table.custom3 td
+{
+  border-width: 0px 0px 0px 0px;
+  padding: 4px;
+  border-style: solid solid solid solid;
+  border-width: 0px 1px 0px 1px;
+  border-color: black black black black;
+}
+
+/* SexyBookmarks */
+div.sexy-bookmarks{margin:20px 0 0 0; border: 0;outline: none;clear:both !important} 
+div.sexy-bookmarks-expand{height:29px; overflow:hidden} 
+.sexy-bookmarks-bg-sexy, .sexy-bookmarks-bg-love{background-image:url(http://lh5.ggpht.com/_W1dLiLjFqdw/SqvDqUgEsbI/AAAAAAAAAmU/RjqYpOpsQC8/sexytrans.png) !important; background-repeat:no-repeat} 
+div.sexy-bookmarks-bg-love{padding:26px 0 0 10px; background-position:left -1148px !important} 
+div.sexy-bookmarks ul.socials{width:100% !important; margin:0 !important; padding:0 !important; float:left} 
+div.sexy-bookmarks ul.socials li{display:inline !important; float:left !important; list-style-type:none !important; margin:0 !important; height:29px !important; width:60px !important; cursor:pointer !important; padding:0 !important} 
+div.sexy-bookmarks ul.socials li:before, div.sexy-bookmarks ul.socials li:after, div.sexy-bookmarks ul.socials li a:before, div.sexy-bookmarks ul.socials li a:after{content:none !important} 
+div.sexy-bookmarks ul.socials a{display:block !important; width:60px !important; height:29px !important; text-indent:-9999px !important; background-color:transparent !important}
+div.sexy-bookmarks ul.socials a:hover{background-color:transparent !important} 
+
+.sexy-newsvine,.sexy-newsvine:hover,.sexy-linkedin,.sexy-linkedin:hover,.sexy-google,.sexy-google:hover,.sexy-googlereader,.sexy-googlereader:hover,.sexy-scriptstyle,.sexy-scriptstyle:hover,.sexy-mail,.sexy-mail:hover,.sexy-comfeed,.sexy-comfeed:hover,.sexy-twitter,.sexy-twitter:hover,.sexy-technorati,.sexy-technorati:hover,.sexy-stumbleupon,.sexy-stumbleupon:hover,.sexy-reddit,.sexy-reddit:hover,.sexy-myspace,.sexy-myspace:hover,.sexy-mixx,.sexy-mixx:hover,.sexy-diigo,.sexy-diigo:hover,.sexy-digg,.sexy-digg:hover,.sexy-designfloat,.sexy-designfloat:hover,.sexy-yahoobuzz,.sexy-yahoobuzz:hover,.sexy-delicious,.sexy-delicious:hover,.sexy-blinklist,.sexy-blinklist:hover,.sexy-facebook,.sexy-facebook:hover,.sexy-misterwong,.sexy-misterwong:hover,.sexy-izeby,.sexy-izeby:hover,.sexy-twittley,.sexy-twittley:hover,.sexy-tipd,.sexy-tipd:hover,.sexy-pfbuzz,.sexy-pfbuzz:hover,.sexy-friendfeed,.sexy-friendfeed:hover,.sexy-blogmarks,.sexy-blogmarks:hover,.sexy-fwisp,.sexy-fwisp:hover,.sexy-designmoo,.sexy-designmoo:hover,.sexy-bobrdobr,.sexy-bobrdobr:hover,.sexy-memoryru,.sexy-memoryru:hover,.sexy-100zakladok,.sexy-100zakladok:hover,.sexy-yandex,.sexy-yandex:hover,.sexy-moemesto,.sexy-moemesto:hover,.sexy-marrows,.sexy-marrows:hover,.sexy-identica,.sexy-identica:hover,.sexy-hackernews,.sexy-hackernews:hover,.sexy-ning,.sexy-ning:hover,.sexy-designbump,.sexy-designbump:hover,.sexy-printfriendly,.sexy-printfriendly:hover,.sexy-fleck,.sexy-fleck:hover,.sexy-netvibes,.sexy-netvibes:hover,.sexy-netvouz,.sexy-netvouz:hover,.sexy-nujij,.sexy-nujij:hover,.sexy-globalgrind,.sexy-globalgrind:hover,.sexy-wikio,.sexy-wikio:hover,.sexy-xerpi,.sexy-xerpi:hover,.sexy-sphinn,.sexy-sphinn:hover,.sexy-blogospherenews,.sexy-blogospherenews:hover,.sexy-posterous,.sexy-posterous:hover,.sexy-techmeme,.sexy-techmeme:hover,.sexy-ekudos,.sexy-ekudos:hover,.sexy-pingfm,.sexy-pingfm:hover,.sexy-tomuse,.sexy-tomuse:hover,.sexy-webblend,.sexy-webblend:hover,.sexy-wykop,.sexy-wykop:hover,.sexy-blogengage,.sexy-blogengage:hover,.sexy-hyves,.sexy-hyves:hover,.sexy-pusha,.sexy-pusha:hover,.sexy-hatena,.sexy-hatena:hover,.sexy-mylinkvault,.sexy-mylinkvault:hover,.sexy-slashdot,.sexy-slashdot:hover,.sexy-squidoo,.sexy-squidoo:hover,.sexy-propeller,.sexy-propeller:hover,.sexy-faqpal,.sexy-faqpal:hover,.sexy-evernote,.sexy-evernote:hover,.sexy-meneame,.sexy-meneame:hover,.sexy-bitacoras,.sexy-bitacoras:hover,.sexy-jumptags,.sexy-jumptags:hover,.sexy-bebo,.sexy-bebo:hover,.sexy-n4g,.sexy-n4g:hover,.sexy-strands,.sexy-strands:hover,.sexy-orkut,.sexy-orkut:hover,.sexy-tumblr,.sexy-tumblr:hover,.sexy-stumpedia,.sexy-stumpedia:hover,.sexy-current,.sexy-current:hover,.sexy-blogger,.sexy-blogger:hover,.sexy-plurk,.sexy-plurk:hover,.sexy-virb,.sexy-virb:hover,.sexy-dzone,.sexy-dzone:hover,.sexy-kaevur,.sexy-kaevur:hover,.sexy-boxnet,.sexy-boxnet:hover,.sexy-oknotizie,.sexy-oknotizie:hover,.sexy-bonzobox,.sexy-bonzobox:hover,.sexy-plaxo,.sexy-plaxo:hover,.sexy-springpad,.sexy-springpad:hover,.sexy-zabox,.sexy-zabox:hover,.sexy-viadeo,.sexy-viadeo:hover,.sexy-googlebuzz,.sexy-googlebuzz:hover {background:url(http://lh5.ggpht.com/_W1dLiLjFqdw/S8SrQ535V4I/AAAAAAAAA1o/tXazbs-fnSA/d/sexy-sprite.png) no-repeat !important;border: 0;outline: none;} 
+
+.sexy-newsvine
+{
+	background-position: left bottom !important;
+}
+.sexy-newsvine:hover
+{
+	background-position: left top !important;
+}
+.sexy-linkedin
+{
+	background-position: -70px bottom !important;
+}
+.sexy-linkedin:hover
+{
+	background-position: -70px top !important;
+}
+.sexy-google
+{
+	background-position: -140px bottom !important;
+}
+.sexy-google:hover
+{
+	background-position: -140px top !important;
+}
+.sexy-googlereader
+{
+	background-position: -210px bottom !important;
+}
+.sexy-googlereader:hover
+{
+	background-position: -210px top !important;
+}
+.sexy-scriptstyle
+{
+	background-position: -280px bottom !important;
+}
+.sexy-scriptstyle:hover
+{
+	background-position: -280px top !important;
+}
+.sexy-mail
+{
+	background-position: -350px bottom !important;
+}
+.sexy-mail:hover
+{
+	background-position: -350px top !important;
+}
+.sexy-comfeed
+{
+	background-position: -420px bottom !important;
+}
+.sexy-comfeed:hover
+{
+	background-position: -420px top !important;
+}
+.sexy-twitter
+{
+	background-position: -490px bottom !important;
+}
+.sexy-twitter:hover
+{
+	background-position: -490px top !important;
+}
+.sexy-technorati
+{
+	background-position: -560px bottom !important;
+}
+.sexy-technorati:hover
+{
+	background-position: -560px top !important;
+}
+.sexy-stumbleupon
+{
+	background-position: -630px bottom !important;
+}
+.sexy-stumbleupon:hover
+{
+	background-position: -630px top !important;
+}
+.sexy-reddit
+{
+	background-position: -700px bottom !important;
+}
+.sexy-reddit:hover
+{
+	background-position: -700px top !important;
+}
+.sexy-myspace
+{
+	background-position: -770px bottom !important;
+}
+.sexy-myspace:hover
+{
+	background-position: -770px top !important;
+}
+.sexy-mixx
+{
+	background-position: -840px bottom !important;
+}
+.sexy-mixx:hover
+{
+	background-position: -840px top !important;
+}
+.sexy-diigo
+{
+	background-position: -910px bottom !important;
+}
+.sexy-diigo:hover
+{
+	background-position: -910px top !important;
+}
+.sexy-digg
+{
+	background-position: -980px bottom !important;
+}
+.sexy-digg:hover
+{
+	background-position: -980px top !important;
+}
+.sexy-designfloat
+{
+	background-position: -1050px bottom !important;
+}
+.sexy-designfloat:hover
+{
+	background-position: -1050px top !important;
+}
+.sexy-yahoobuzz
+{
+	background-position: -1120px bottom !important;
+}
+.sexy-yahoobuzz:hover
+{
+	background-position: -1120px top !important;
+}
+.sexy-delicious
+{
+	background-position: -1190px bottom !important;
+}
+.sexy-delicious:hover
+{
+	background-position: -1190px top !important;
+}
+.sexy-blinklist
+{
+	background-position: -1260px bottom !important;
+}
+.sexy-blinklist:hover
+{
+	background-position: -1260px top !important;
+}
+.sexy-facebook
+{
+	background-position: -1330px bottom !important;
+}
+.sexy-facebook:hover
+{
+	background-position: -1330px top !important;
+}
+.sexy-misterwong
+{
+	background-position: -1400px bottom !important;
+}
+.sexy-misterwong:hover
+{
+	background-position: -1400px top !important;
+}
+.sexy-izeby
+{
+	background-position: -1470px bottom !important;
+}
+.sexy-izeby:hover
+{
+	background-position: -1470px top !important;
+}
+.sexy-twittley
+{
+	background-position: -1540px bottom !important;
+}
+.sexy-twittley:hover
+{
+	background-position: -1540px top !important;
+}
+.sexy-tipd
+{
+	background-position: -1610px bottom !important;
+}
+.sexy-tipd:hover
+{
+	background-position: -1610px top !important;
+}
+.sexy-pfbuzz
+{
+	background-position: -1680px bottom !important;
+}
+.sexy-pfbuzz:hover
+{
+	background-position: -1680px top !important;
+}
+.sexy-friendfeed
+{
+	background-position: -1750px bottom !important;
+}
+.sexy-friendfeed:hover
+{
+	background-position: -1750px top !important;
+}
+.sexy-blogmarks
+{
+	background-position: -1820px bottom !important;
+}
+.sexy-blogmarks:hover
+{
+	background-position: -1820px top !important;
+}
+.sexy-fwisp
+{
+	background-position: -1890px bottom !important;
+}
+.sexy-fwisp:hover
+{
+	background-position: -1890px top !important;
+}
+.sexy-designmoo
+{
+	background-position: -1960px bottom !important;
+}
+.sexy-designmoo:hover
+{
+	background-position: -1960px top !important;
+}
+.sexy-bobrdobr
+{
+	background-position: -2030px bottom !important;
+}
+.sexy-bobrdobr:hover
+{
+	background-position: -2030px top !important;
+}
+.sexy-memoryru
+{
+	background-position: -2100px bottom !important;
+}
+.sexy-memoryru:hover
+{
+	background-position: -2100px top !important;
+}
+.sexy-100zakladok
+{
+	background-position: -2170px bottom !important;
+}
+.sexy-100zakladok:hover
+{
+	background-position: -2170px top !important;
+}
+.sexy-yandex
+{
+	background-position: -2240px bottom !important;
+}
+.sexy-yandex:hover
+{
+	background-position: -2240px top !important;
+}
+.sexy-moemesto
+{
+	background-position: -2310px bottom !important;
+}
+.sexy-moemesto:hover
+{
+	background-position: -2310px top !important;
+}
+.sexy-marrows
+{
+	background-position: -2380px bottom !important;
+}
+.sexy-marrows:hover
+{
+	background-position: -2380px top !important;
+}
+.sexy-identica
+{
+	background-position: -2450px bottom !important;
+}
+.sexy-identica:hover
+{
+	background-position: -2450px top !important;
+}
+.sexy-hackernews
+{
+	background-position: -2520px bottom !important;
+}
+.sexy-hackernews:hover
+{
+	background-position: -2520px top !important;
+}
+.sexy-ning
+{
+	background-position: -2590px bottom !important;
+}
+.sexy-ning:hover
+{
+	background-position: -2590px top !important;
+}
+.sexy-designbump
+{
+	background-position: -2660px bottom !important;
+}
+.sexy-designbump:hover
+{
+	background-position: -2660px top !important;
+}
+.sexy-printfriendly
+{
+	background-position: -2730px bottom !important;
+}
+.sexy-printfriendly:hover
+{
+	background-position: -2730px top !important;
+}
+.sexy-fleck
+{
+	background-position: -2800px bottom !important;
+}
+.sexy-fleck:hover
+{
+	background-position: -2800px top !important;
+}
+.sexy-netvibes
+{
+	background-position: -2870px bottom !important;
+}
+.sexy-netvibes:hover
+{
+	background-position: -2870px top !important;
+}
+.sexy-netvouz
+{
+	background-position: -2940px bottom !important;
+}
+.sexy-netvouz:hover
+{
+	background-position: -2940px top !important;
+}
+.sexy-nujij
+{
+	background-position: -3010px bottom !important;
+}
+.sexy-nujij:hover
+{
+	background-position: -3010px top !important;
+}
+.sexy-globalgrind
+{
+	background-position: -3080px bottom !important;
+}
+.sexy-globalgrind:hover
+{
+	background-position: -3080px top !important;
+}
+.sexy-wikio
+{
+	background-position: -3150px bottom !important;
+}
+.sexy-wikio:hover
+{
+	background-position: -3150px top !important;
+}
+.sexy-xerpi
+{
+	background-position: -3220px bottom !important;
+}
+.sexy-xerpi:hover
+{
+	background-position: -3220px top !important;
+}
+.sexy-sphinn
+{
+	background-position: -3290px bottom !important;
+}
+.sexy-sphinn:hover
+{
+	background-position: -3290px top !important;
+}
+.sexy-blogospherenews
+{
+	background-position: -3360px bottom !important;
+}
+.sexy-blogospherenews:hover
+{
+	background-position: -3360px top !important;
+}
+.sexy-posterous
+{
+	background-position: -3430px bottom !important;
+}
+.sexy-posterous:hover
+{
+	background-position: -3430px top !important;
+}
+.sexy-techmeme
+{
+	background-position: -3500px bottom !important;
+}
+.sexy-techmeme:hover
+{
+	background-position: -3500px top !important;
+}
+.sexy-ekudos
+{
+	background-position: -3570px bottom !important;
+}
+.sexy-ekudos:hover
+{
+	background-position: -3570px top !important;
+}
+.sexy-pingfm
+{
+	background-position: -3640px bottom !important;
+}
+.sexy-pingfm:hover
+{
+	background-position: -3640px top !important;
+}
+.sexy-tomuse
+{
+	background-position: -3710px bottom !important;
+}
+.sexy-tomuse:hover
+{
+	background-position: -3710px top !important;
+}
+.sexy-webblend
+{
+	background-position: -3780px bottom !important;
+}
+.sexy-webblend:hover
+{
+	background-position: -3780px top !important;
+}
+.sexy-wykop
+{
+	background-position: -3850px bottom !important;
+}
+.sexy-wykop:hover
+{
+	background-position: -3850px top !important;
+}
+.sexy-blogengage
+{
+	background-position: -3920px bottom !important;
+}
+.sexy-blogengage:hover
+{
+	background-position: -3920px top !important;
+}
+.sexy-hyves
+{
+	background-position: -3990px bottom !important;
+}
+.sexy-hyves:hover
+{
+	background-position: -3990px top !important;
+}
+.sexy-pusha
+{
+	background-position: -4060px bottom !important;
+}
+.sexy-pusha:hover
+{
+	background-position: -4060px top !important;
+}
+.sexy-hatena
+{
+	background-position: -4130px bottom !important;
+}
+.sexy-hatena:hover
+{
+	background-position: -4130px top !important;
+}
+.sexy-mylinkvault
+{
+	background-position: -4200px bottom !important;
+}
+.sexy-mylinkvault:hover
+{
+	background-position: -4200px top !important;
+}
+.sexy-slashdot
+{
+	background-position: -4270px bottom !important;
+}
+.sexy-slashdot:hover
+{
+	background-position: -4270px top !important;
+}
+.sexy-squidoo
+{
+	background-position: -4340px bottom !important;
+}
+.sexy-squidoo:hover
+{
+	background-position: -4340px top !important;
+}
+.sexy-propeller
+{
+	background-position: -4410px bottom !important;
+}
+.sexy-propeller:hover
+{
+	background-position: -4410px top !important;
+}
+.sexy-faqpal
+{
+	background-position: -4480px bottom !important;
+}
+.sexy-faqpal:hover
+{
+	background-position: -4480px top !important;
+}
+.sexy-evernote
+{
+	background-position: -4550px bottom !important;
+}
+.sexy-evernote:hover
+{
+	background-position: -4550px top !important;
+}
+.sexy-meneame
+{
+	background-position: -4620px bottom !important;
+}
+.sexy-meneame:hover
+{
+	background-position: -4620px top !important;
+}
+.sexy-bitacoras
+{
+	background-position: -4690px bottom !important;
+}
+.sexy-bitacoras:hover
+{
+	background-position: -4690px top !important;
+}
+.sexy-jumptags
+{
+	background-position: -4760px bottom !important;
+}
+.sexy-jumptags:hover
+{
+	background-position: -4760px top !important;
+}
+.sexy-bebo
+{
+	background-position: -4830px bottom !important;
+}
+.sexy-bebo:hover
+{
+	background-position: -4830px top !important;
+}
+.sexy-n4g
+{
+	background-position: -4900px bottom !important;
+}
+.sexy-n4g:hover
+{
+	background-position: -4900px top !important;
+}
+.sexy-strands
+{
+	background-position: -4970px bottom !important;
+}
+.sexy-strands:hover
+{
+	background-position: -4970px top !important;
+}
+.sexy-orkut
+{
+	background-position: -5040px bottom !important;
+}
+.sexy-orkut:hover
+{
+	background-position: -5040px top !important;
+}
+.sexy-tumblr
+{
+	background-position: -5110px bottom !important;
+}
+.sexy-tumblr:hover
+{
+	background-position: -5110px top !important;
+}
+.sexy-stumpedia
+{
+	background-position: -5180px bottom !important;
+}
+.sexy-stumpedia:hover
+{
+	background-position: -5180px top !important;
+}
+.sexy-current
+{
+	background-position: -5250px bottom !important;
+}
+.sexy-current:hover
+{
+	background-position: -5250px top !important;
+}
+.sexy-blogger
+{
+	background-position: -5320px bottom !important;
+}
+.sexy-blogger:hover
+{
+	background-position: -5320px top !important;
+}
+.sexy-plurk
+{
+	background-position: -5390px bottom !important;
+}
+.sexy-plurk:hover
+{
+	background-position: -5390px top !important;
+}
+.sexy-virb
+{
+	background-position: -5460px bottom !important;
+}
+.sexy-virb:hover
+{
+	background-position: -5460px top !important;
+}
+.sexy-dzone
+{
+	background-position: -5530px bottom !important;
+}
+.sexy-dzone:hover
+{
+	background-position: -5530px top !important;
+}
+.sexy-kaevur
+{
+	background-position: -5600px bottom !important;
+}
+.sexy-kaevur:hover
+{
+	background-position: -5600px top !important;
+}
+.sexy-boxnet
+{
+	background-position: -5670px bottom !important;
+}
+.sexy-boxnet:hover
+{
+	background-position: -5670px top !important;
+}
+.sexy-oknotizie
+{
+	background-position: -5740px bottom !important;
+}
+.sexy-oknotizie:hover
+{
+	background-position: -5740px top !important;
+}
+.sexy-bonzobox
+{
+	background-position: -5810px bottom !important;
+}
+.sexy-bonzobox:hover
+{
+	background-position: -5810px top !important;
+}
+.sexy-plaxo
+{
+	background-position: -5880px bottom !important;
+}
+.sexy-plaxo:hover
+{
+	background-position: -5880px top !important;
+}
+.sexy-springpad
+{
+	background-position: -5950px bottom !important;
+}
+.sexy-springpad:hover
+{
+	background-position: -5950px top !important;
+}
+.sexy-zabox
+{
+	background-position: -6020px bottom !important;
+}
+.sexy-zabox:hover
+{
+	background-position: -6020px top !important;
+}
+.sexy-viadeo
+{
+	background-position: -6090px bottom !important;
+}
+.sexy-viadeo:hover
+{
+	background-position: -6090px top !important;
+}
+.sexy-googlebuzz
+{
+	background-position: -6160px bottom !important;
+}
+.sexy-googlebuzz:hover
+{
+	background-position: -6160px top !important;
+}
+
+
+div#google_translate_element
+{
+    position:absolute;
+    top:177px;
+    left:350px;
+}
+
+.avatar-image-container img
+{
+    height:35px;
+    width:35px;
+}
+
+#comments-block .avatar-image-container.avatar-stock img
+{
+  background: url(http://lh3.ggpht.com/_pt7i0nbIOCY/Sro5rU4Hz6I/AAAAAAAACTc/jM4BdeAnU74/avatar_thumb%5B1%5D.jpg) no-repeat;
+}
+
+#comments-block .avatar-image-container.avatar-stock .avatar-hovercard img
+{
+  background: none;
+}
+
+#comment-editor
+{
+  height:400px;
+}
+
+
+/* Start Pagination */
+
+.showpageOf
+{
+    padding-right: 10px;
+}
+
+.showpageArea
+{
+    padding: 0 7px;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.showpageArea a
+{
+    color: #000000;
+    font-weight:bold;
+    background:#ffffff;
+    padding: 5px !important;
+    font-size:12px;
+    margin:0px 15px;
+    text-decoration:none;
+}
+
+.showpagePoint
+{
+    font-size:12px;
+    padding: 5px;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.showpagePoint
+{
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.showpage
+{
+    font-size:12px;
+}
+
+.showpageNum 
+{
+    font-size:12px;
+	padding: 2px 2px 2px 2px;
+}
+
+.showpage a:hover
+{
+    font-size:12px;
+	color: #FFFFFF;
+    background-color: #000000;
+}
+
+.showpageNum a:hover
+{
+    font-size:12px;
+	color: #FFFFFF;
+    background-color: #000000;
+}
+
+.showpageArea a:hover
+{
+    color: #FFFFFF !important;
+    background: #000000 !important;
+}
+
+/* End Pagination */
+
