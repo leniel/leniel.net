@@ -9,6 +9,15 @@
  * Moved the StyleSheet file to GitHub on 1 February 2017
 */
 
+.gsc-search-button {
+    box-sizing: initial;
+}
+
+.gsc-input
+{
+    color:black;
+}
+
 div#ContactForm1 {
     display: none;
 }
