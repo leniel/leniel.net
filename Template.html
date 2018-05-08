@@ -18,7 +18,7 @@
     <!-- Bootstrap -->
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
     <!-- Custom styles -->
-    <link href='//cdn.rawgit.com/leniel/leniel.net/8f0bf9fe/StyleSheet.min.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='//cdn.rawgit.com/leniel/leniel.net/1f2d1a3f7e9a937a5d801bd0e1ecda18c0b163b4/StyleSheet.min.css' media='all' rel='stylesheet' type='text/css'/>
     <title>
       <data:blog.pageTitle/>
     </title>
@@ -44,8 +44,18 @@
                                                                         $(&quot;#wordCount&quot;).text(count);
                                                                         });
     </script>
-    <script src='//opensharecount.com/bubble.js' type='text/javascript'/>
-  </head>
+&lt;script type=&#39;text/javascript&#39; src=&#39;//platform-api.sharethis.com/js/sharethis.js#property=5af1e2f065adf7001138980c&amp;product=social-ab&#39; async=&#39;async&#39;&gt;&lt;/script&gt;
+  
+<!-- start Google AdSense -->
+<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: &quot;ca-pub-8849057428395760&quot;,
+          enable_page_level_ads: true
+     });
+</script>
+<!-- End Google AdSense -->
+</head>
   <body expr:class='data:blog.mobileClass'>
     <!-- Static page styling Start-->
     <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
@@ -60,8 +70,17 @@
 <a href='#main'>skip to main </a> | <a href='#sidebar'>skip to sidebar</a>
 </span> -->
         <div id='header-wrapper'>
-          <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-            <b:widget id='Header1' locked='true' title='Leniel Macaferi&apos;s blog (Header)' type='Header' version='1' visible='true'>
+          <b:section class='header' id='header' maxwidgets='1' showaddelement='false'>
+            <b:widget id='Header1' locked='false' mobile='yes' title='Leniel Macaferi&apos;s blog (Header)' type='Header' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'/>
+                <b:widget-setting name='displayHeight'>0</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>790</b:widget-setting>
+                <b:widget-setting name='useImage'>false</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+                <b:widget-setting name='displayWidth'>0</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
 
                 <b:if cond='data:useImage'>
@@ -112,7 +131,20 @@ which is probably better than having them overflow out of the div.
                         </td>
                         <td align='right' valign='bottom'>
                           &lt;!-- Google CSE Search Box Begins  --&gt;
-                          <div id='cse-search-form' style='width: 84.5%;'/>
+                          <!-- start Google Custom Search -->
+    <script>
+  (function() {
+    var cx = &#39;007175710259988001729:v4pzgbdlimm&#39;;
+    var gcse = document.createElement(&#39;script&#39;);
+    gcse.type = &#39;text/javascript&#39;;
+    gcse.async = true;
+    gcse.src = &#39;https://cse.google.com/cse.js?cx=&#39; + cx;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only/>
+    <!-- end Google Custom Search -->
                           &lt;!-- Google CSE Search Box Ends --&gt;
                         </td>
                       </tr>
@@ -142,7 +174,11 @@ which is probably better than having them overflow out of the div.
           </b:section>
           <div id='crosscol-wrapper' style='text-align:center;'>
             <b:section class='crosscol' id='crosscol' showaddelement='no'>
-              <b:widget id='PageList1' locked='false' mobile='yes' title='' type='PageList' visible='true'>
+              <b:widget id='PageList1' locked='false' mobile='yes' title='' type='PageList'>
+                <b:widget-settings>
+                  <b:widget-setting name='pageListJson'><![CDATA[{'5094743746631900240': {'href': 'http://www.leniel.net/p/consultant.html', 'title': 'Consultant', 'position': 0}, '8078830824696106693': {'href': 'http://www.leniel.net/p/consultor.html', 'title': 'Consultor', 'position': 1}, 'link0': {'href': 'http://www.proz.com/translator/849397', 'title': 'Translator', 'position': 2}, '7784578173060177487': {'href': 'http://www.leniel.net/p/contact-me.html', 'title': 'Contact', 'position': 3}}]]></b:widget-setting>
+                  <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <b:if cond='data:title'>
                     <h2>
@@ -196,7 +232,28 @@ which is probably better than having them overflow out of the div.
         <div id='content-wrapper'>
           <div id='main-wrapper'>
             <b:section class='main' id='main' preferred='yes' showaddelement='no'>
-              <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1' visible='true'>
+              <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+                <b:widget-settings>
+                  <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                  <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                  <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+                  <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+                  <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                  <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                  <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                  <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                  <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                  <b:widget-setting name='style.layout'>336x280</b:widget-setting>
+                  <b:widget-setting name='showLabels'>true</b:widget-setting>
+                  <b:widget-setting name='showLocation'>true</b:widget-setting>
+                  <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                  <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                  <b:widget-setting name='showBacklinks'>true</b:widget-setting>
+                  <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+                  <b:widget-setting name='showReactions'>false</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main' var='top'>
                   <!-- posts -->
                   <div class='blog-posts hfeed'>
@@ -793,13 +850,6 @@ which is probably better than having them overflow out of the div.
                     <b:if cond='data:blog.pageType == &quot;item&quot;'>
                       <div align='center' style='margin-bottom: -15px;'>
                         <br/>
-                        <!-- start Google AdSense -->
-                        <script async='' src='http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-                        <ins class='adsbygoogle' data-ad-client='ca-pub-8849057428395760' data-ad-slot='8072744352' style='display:inline-block;width:468px;height:60px'/>
-                        <script>
-                          (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                        <!-- end Google AdSense -->
                       </div>
                     </b:if>
                     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
@@ -838,49 +888,6 @@ which is probably better than having them overflow out of the div.
                               </b:if>
                             </span>
                             <!-- end Star Rating -->
-                            <table id='buttons'>
-                              <tr>
-                                <td>
-                                  <!-- Google +1 button -->
-                                  <div class='g-plusone' data-size='medium'/>
-                                </td>
-                                <td style='padding-right:30px'>
-                                  <!-- Twitter button -->
-                                  <a class='twitter-share-button' data-count='horizontal' data-lang='en' data-related='johnleniel' data-via='johnleniel' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share'/>
-                                  <a class='osc-counter' data-dir='left' href='http://leadstories.com/opensharecount' target='_blank'>0</a>
-                                </td>
-                                <td>
-                                  <!-- Facebook Like button -->
-                                  <div class='fb-like' data-layout='button_count' data-send='false' data-show-faces='true' data-width='100' style='vertical-align:top;width:105px'/>
-                                </td>
-                                <td>
-                                  <!-- ShareThis button -->
-                                  <div class='st_sharethis_hcount' displayText='Share' style='width:110px'/>
-                                </td>
-                              </tr>
-                            </table>
-                            <!-- START Social buttons vertical bar -->
-                            &lt;div id=&#39;pageshare&#39;&gt;
-                            &lt;div class=&#39;sbutton&#39; id=&#39;google+1&#39;&gt;
-                            &lt;g:plusone size=&#39;tall&#39;/&gt;
-                            &lt;/g:plusone&gt;
-                            &lt;/div&gt;
-                            <!-- Google + Share button 
-<div class='g-plus' data-action='share' data-annotation='vertical-bubble' dataight='60'/> -->
-                            &lt;div class=&#39;sbutton&#39; id=&#39;twitter&#39; style=&#39;height:67px;&#39;&gt;			           
-                            <div style='margin-bottom:5px'><a class='osc-counter' data-dir='bottom' data-size='large' data-width='57px' expr:data-url='data:post.url' href='http://leadstories.com/opensharecount' target='_blank'>0</a></div>
-                            <a class='twitter-share-button' data-count='vertical' data-lang='en' data-related='johnleniel' data-via='johnleniel' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share'/>
-                            &lt;/div&gt;
-                            &lt;div class=&#39;sbutton&#39; id=&#39;facebooklike&#39;&gt;
-                            &lt;fb:like font=&#39;&#39; layout=&#39;box_count&#39; show_faces=&#39;false&#39; style=&#39;text-align:center; width: 46px&#39; width=&#39;0&#39;/&gt;
-                            &lt;/fb:like&gt;
-                            &lt;/div&gt;
-                            &lt;span class=&#39;notranslate&#39;&gt;
-                            &lt;div class=&#39;st_sharethis_vcount&#39; displaytext=&#39;share&#39; id=&#39;sharethis&#39;/&gt;
-                            &lt;/div&gt;
-                            &lt;/span&gt;
-                            &lt;/div&gt;
-                            <!-- END Social buttons vertical bar -->
                           </b:if>
                         </center>
                         <p class='post-footer-line post-footer-line-1'>
@@ -1249,7 +1256,7 @@ which is probably better than having them overflow out of the div.
           </div>
           <div id='sidebar-wrapper'>
             <b:section class='sidebar' id='sidebar' preferred='no' showaddelement='yes'>
-              <b:widget id='ContactForm1' locked='false' mobile='yes' title='Contact Form' type='ContactForm' version='1' visible='true'>
+              <b:widget id='ContactForm1' locked='false' mobile='yes' title='Contact Form' type='ContactForm' version='1'>
                 <b:includable id='main'>
                   <b:if cond='data:title != &quot;&quot;'>
                     <h2 class='title'>
@@ -1290,7 +1297,10 @@ which is probably better than having them overflow out of the div.
                   <b:include name='quickedit'/>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML3' locked='false' title='' type='HTML' version='1' visible='true'>
+              <b:widget id='HTML3' locked='false' title='' type='HTML' version='1'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'><![CDATA[<script type='text/javascript' src="http://blogger-infinite-scrolling.appspot.com/blogger-infinite-scrolling.js"></script>]]></b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1304,7 +1314,11 @@ which is probably better than having them overflow out of the div.
                   <b:include name='quickedit'/>
                 </b:includable>
               </b:widget>
-              <b:widget id='Profile1' locked='false' mobile='only' title='About Me' type='Profile' visible='true'>
+              <b:widget id='Profile1' locked='false' mobile='only' title='About Me' type='Profile'>
+                <b:widget-settings>
+                  <b:widget-setting name='showaboutme'>true</b:widget-setting>
+                  <b:widget-setting name='showlocation'>false</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <b:if cond='data:title != &quot;&quot;'>
                     <h2>
@@ -1359,14 +1373,68 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='PlusOne1' locked='false' mobile='yes' title='+1 Button' type='PlusOne' visible='true'>
-                <b:includable id='main'>
-                  <div class='widget-content'>
-                    <g:plusone expr:annotation='data:annotation' expr:href='data:blog.canonicalHomepageUrl' expr:size='data:size' source='blogger:blog:plusone' width='250'/>
-                  </div>
-                </b:includable>
-              </b:widget>
-              <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+              <b:widget id='HTML1' locked='false' title='' type='HTML'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;sidebar-buttons&quot;&gt;
+
+&lt;tr&gt;
+   &lt;td&gt;
+        &lt;a href=&quot;https://plus.google.com/114767333676393021366&quot; target=&quot;_blank&quot; title=&quot;Google profile&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Google profile&quot; src=&quot;https://lh4.googleusercontent.com/-SRK499E5wuc/UHZROYyshxI/AAAAAAAACY0/TdqeT1V_ixw/s32/GooglePlusIcon.png&quot; height=&quot;32&quot; width=&quot;32&quot; /&gt;&lt;/a&gt;
+    &lt;/td&gt; 
+
+    &lt;td&gt;
+        &lt;a href=&quot;http://www.linkedin.com/in/leniel&quot; target=&quot;_blank&quot; title=&quot;LinkedIn profile&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;LinkedIn profile&quot; src=&quot;https://lh5.googleusercontent.com/--_6K_nNMsHo/UHZKRIGq5bI/AAAAAAAACYI/Hx9E141K0Aw/s32/LinkedInLogo.png&quot; height=&quot;32&quot; width=&quot;32&quot; /&gt;&lt;/a&gt;
+    &lt;/td&gt;
+
+    &lt;td&gt;
+        &lt;a href=&quot;http://careers.stackoverflow.com/leniel&quot; target=&quot;_blank&quot; title=&quot;CV at StackOverflow&quot;&gt;
+            &lt;img border=&quot;0&quot; width=&quot;32&quot; alt=&quot;View my CV at StackOverflow&quot; src=&quot;https://lh6.googleusercontent.com/-BTRuSnfiEP4/UHZE3lUtguI/AAAAAAAACW8/zvfin3ijEK4/s32/StackOverflowIcon.png&quot; height=&quot;32&quot; /&gt;
+        &lt;/a&gt;
+    &lt;/td&gt;
+
+    &lt;td&gt;
+        &lt;a href=&quot;http://www.twitter.com/johnleniel&quot; target=&quot;_blank&quot; title=&quot;Follow me on Twitter&quot;&gt;
+            &lt;img width=&quot;32&quot; height=&quot;32&quot; src=&quot;https://lh5.googleusercontent.com/-anhT8UAyuNk/UHZFybOlhvI/AAAAAAAACXU/LUpAsjOCPNo/s32/TwitterIcon.png&quot; alt=&quot;Follow me on Twitter&quot; /&gt;
+       &lt;/a&gt;
+    &lt;/td&gt;
+
+    &lt;td&gt;
+        &lt;a href=&quot;http://feeds.feedburner.com/leniel&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;RSS feed&quot;&gt;
+            &lt;img alt=&quot;Feed icon&quot; src=&quot;https://lh5.googleusercontent.com/-9ParU76fQIs/UHZGUtuMsqI/AAAAAAAACXo/tEMCEEJ2k8A/s32/RSSFeedIcon.png&quot; width=&quot;32&quot; height=&quot;32&quot;/&gt;
+        &lt;/a&gt;
+    &lt;/td&gt;
+
+    &lt;td&gt;
+        &lt;a href=&quot;http://feedproxy.google.com/leniel&quot;&gt;
+            &lt;img width=&quot;88&quot; style=&quot;border:0&quot; alt=&quot;Feedburner readers count&quot; src=&quot;http://feedproxy.google.com/~fc/leniel?bg=FFFFFF&amp;amp;fg=000000&amp;amp;anim=1&quot; height=&quot;26&quot; /&gt;
+        &lt;/a&gt;
+    &lt;/td&gt;
+
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;!--
+
+&lt;h2&gt;
+    &lt;a href=&quot;http://www.google.com/profiles/leniel&quot; target=&quot;_blank&quot;&gt;About me
+    &lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot; target=&quot;_blank&quot;&gt;
+    &lt;img border=&quot;0&quot; alt=&quot;Me&quot; width=&quot;128&quot; src=&quot;http://www.gravatar.com/avatar/296f29c92c1561c79e034df64dc19f56?s=128&amp;d=identicon&amp;r=PG&quot; height=&quot;128&quot; align=&quot;right&quot; /&gt;
+&lt;/a&gt;
+
+&lt;div class=&quot;about-me&quot;&gt;
+    &lt;a href=&quot;http://jes4us.blogspot.com&quot; target=&quot;_blank&quot;&gt;Jesus Christ follower&lt;/a&gt; and computer engineer.&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot; target=&quot;_blank&quot;&gt;Software engineering&lt;/a&gt; and &lt;a href=&quot;http://www.last.fm/user/leniel&quot; target=&quot;_blank&quot;&gt;Music&lt;/a&gt; lover!
+&lt;/div&gt;--&gt;
+
+&lt;!--&lt;p class=&quot;hireme&quot;&gt;
+    &lt;a href=&quot;http://www.leniel.net/p/consultant.html&quot;&gt;&lt;b&gt;HIRE ME!&lt;/b&gt;
+    &lt;/a&gt;
+&lt;/p&gt;--&gt;</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1379,7 +1447,25 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML5' locked='false' title='' type='HTML' visible='true'>
+              <b:widget id='HTML5' locked='false' title='' type='HTML'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;!-- Place this tag where you want the badgev2 to render. --&gt;
+&lt;div class=&quot;g-person&quot; data-width=&quot;260&quot; data-href=&quot;//plus.google.com/114767333676393021366&quot; data-showcoverphoto=&quot;false&quot; data-rel=&quot;author&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Place this tag after the last badgev2 tag. --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  (function() {
+    var po = document.createElement(&#39;script&#39;); po.type = &#39;text/javascript&#39;; po.async = true;
+    po.src = &#39;https://apis.google.com/js/plusone.js&#39;;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(po, s);
+  })();
+&lt;/script&gt;
+
+All work provided in this blog is licensed under a Creative Commons Attribution-Share Alike license.
+&lt;center&gt;&lt;a href=&#39;http://creativecommons.org/licenses/by-sa/3.0/us/&#39; rel=&#39;license&#39; target=&#39;_blank&#39;&gt;
+                  &lt;img alt=&#39;Creative Commons License&#39; src=&#39;http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png&#39; style=&#39;border-width:0&#39;/&gt;
+&lt;/a&gt;&lt;/center&gt;</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1392,7 +1478,31 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML10' locked='false' title='' type='HTML' visible='true'>
+              <b:widget id='HTML10' locked='false' title='' type='HTML'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;!--&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;td style=&quot;text-align:center; width:100%&quot;&gt;
+&lt;a href=&quot;https://github.com/leniel&quot; target=&quot;_blank&quot; title=&quot;GitHub profile&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;GitHub profile&quot; src=&quot;https://lh5.googleusercontent.com/-Zk9hxOzCdi4/Ujag_K6GGoI/AAAAAAAADIw/EDTGoMulsc8/s64-no/GitHub-Mark-32px.png&quot; height=&quot;32&quot; width=&quot;32&quot; /&gt;&lt;/a&gt;
+&lt;/td&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;--&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+
+&lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;http://stackoverflow.com/users/flair/114029.png?theme=clean&quot; width=&quot;208&quot; height=&quot;58&quot; alt=&quot;profile for Leniel Macaferi at Stack Overflow, Q&amp;amp;A for professional and enthusiast programmers&quot; title=&quot;profile for Leniel Macaferi at Stack Overflow, Q&amp;amp;A for professional and enthusiast programmers&quot; /&gt;
+&lt;/a&gt;
+
+&lt;br /&gt;
+&lt;br/&gt;
+
+&lt;center&gt;
+&lt;iframe src=&quot;https://githubbadge.appspot.com/leniel&quot; style=&quot;border: 0;height: 115px;width: 100%;overflow: hidden;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/div&gt;</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1405,7 +1515,17 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML9' locked='false' title='' type='HTML' visible='true'>
+              <b:widget id='HTML2' locked='false' title='' type='HTML'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;a class=&quot;twitter-timeline&quot;  href=&quot;https://twitter.com/johnleniel&quot; data-widget-id=&quot;258437561440145409&quot;  data-related=&quot;johnleniel&quot; height=&quot;500&quot;&gt;Tweets by @johnleniel&lt;/a&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+&lt;br/&gt;&lt;br/&gt;
+
+&lt;!-- &lt;iframe height=&#39;454&#39; width=&#39;260&#39; frameborder=&#39;0&#39; allowtransparency=&#39;true&#39; scrolling=&#39;no&#39; src=&#39;http://www.strava.com/athletes/3325914/latest-rides/dba21e3b6922ecc5b76cfb862bcf88fe395b6286&#39;&gt;&lt;/iframe&gt; 
+
+&lt;br/&gt;&lt;br/&gt;
+--&gt;</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1418,20 +1538,13 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'>
-                <b:includable id='main'>
-                  <!-- only display title if it's non-empty -->
-                  <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'>
-                      <data:title/>
-                    </h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <data:content/>
-                  </div>
-                </b:includable>
-              </b:widget>
-              <b:widget id='PopularPosts1' locked='false' title='TOP Posts' type='PopularPosts' visible='true'>
+              <b:widget id='PopularPosts1' locked='false' title='TOP Posts' type='PopularPosts'>
+                <b:widget-settings>
+                  <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+                  <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+                  <b:widget-setting name='showSnippets'>true</b:widget-setting>
+                  <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <b:if cond='data:title'>
                     <h2>
@@ -1505,7 +1618,18 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive' visible='true'>
+              <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive'>
+                <b:widget-settings>
+                  <b:widget-setting name='showStyle'>MENU</b:widget-setting>
+                  <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+                  <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+                  <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
+                  <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+                  <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+                  <b:widget-setting name='chronological'>false</b:widget-setting>
+                  <b:widget-setting name='showPosts'>true</b:widget-setting>
+                  <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <b:if cond='data:title'>
                     <h2>
@@ -1614,7 +1738,25 @@ which is probably better than having them overflow out of the div.
                   </b:if>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML7' locked='false' title='Music' type='HTML' visible='true'>
+              <b:widget id='HTML7' locked='false' title='Music' type='HTML'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;center&gt;
+
+My music at&lt;br/&gt;&lt;strong&gt;&lt;span style=&quot;color:#DC4D5B&quot;&gt;&lt;a href=&quot;https://www.last.fm/user/leniel&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://i.imgur.com/jq3y02p.png&quot; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt;
+
+
+&lt;!--&lt;style type=&quot;text/css&quot;&gt;table.lfmWidget757dcf925f19aa2b19e91575ab0a1326 td {margin:0 !important;padding:0 !important;border:0 !important;}table.lfmWidget757dcf925f19aa2b19e91575ab0a1326 tr.lfmHead a:hover {background:url(http://cdn.last.fm/widgets/images/en/header/chart/recenttracks_regular_black.png) no-repeat 0 0 !important;}table.lfmWidget757dcf925f19aa2b19e91575ab0a1326 tr.lfmEmbed object {float:left;}table.lfmWidget757dcf925f19aa2b19e91575ab0a1326 tr.lfmFoot td.lfmConfig a:hover {background:url(http://cdn.last.fm/widgets/images/en/footer/black.png) no-repeat 0px 0 !important;;}table.lfmWidget757dcf925f19aa2b19e91575ab0a1326 tr.lfmFoot td.lfmView a:hover {background:url(http://cdn.last.fm/widgets/images/en/footer/black.png) no-repeat -85px 0 !important;}table.lfmWidget757dcf925f19aa2b19e91575ab0a1326 tr.lfmFoot td.lfmPopup a:hover {background:url(http://cdn.last.fm/widgets/images/en/footer/black.png) no-repeat -159px 0 !important;}&lt;/style&gt;
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:184px;&quot; class=&quot;lfmWidget757dcf925f19aa2b19e91575ab0a1326&quot;&gt;&lt;tr class=&quot;lfmHead&quot;&gt;&lt;td&gt;&lt;a style=&quot;display:block;overflow:hidden;height:20px;width:184px;background:url(http://cdn.last.fm/widgets/images/en/header/chart/recenttracks_regular_black.png) no-repeat 0 -20px;text-decoration:none;border:0;&quot; href=&quot;http://www.last.fm/user/leniel/&quot; target=&quot;_blank&quot; title=&quot;leniel: Recently Listened Tracks&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;lfmEmbed&quot;&gt;&lt;td&gt;&lt;object data=&quot;http://cdn.last.fm/widgets/chart/19.swf&quot; width=&quot;184&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0&quot; height=&quot;179&quot; type=&quot;application/x-shockwave-flash&quot;&gt; &lt;param value=&quot;http://cdn.last.fm/widgets/chart/19.swf&quot; name=&quot;movie&quot;/&gt; &lt;param value=&quot;type=recenttracks&amp;amp;user=leniel&amp;amp;theme=black&amp;amp;lang=en&amp;amp;widget_id=757dcf925f19aa2b19e91575ab0a1326&quot; name=&quot;flashvars&quot;/&gt; &lt;param value=&quot;000000&quot; name=&quot;bgcolor&quot;/&gt; &lt;param value=&quot;high&quot; name=&quot;quality&quot;/&gt; &lt;param value=&quot;always&quot; name=&quot;allowScriptAccess&quot;/&gt; &lt;param value=&quot;all&quot; name=&quot;allowNetworking&quot;/&gt; &lt;/object&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;lfmFoot&quot;&gt;&lt;td style=&quot;background:url(http://cdn.last.fm/widgets/images/footer_bg/black.png) repeat-x 0 0;text-align:right;&quot;&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width:184px;&quot;&gt;&lt;tr&gt;&lt;td class=&quot;lfmConfig&quot;&gt;&lt;a style=&quot;display:block;overflow:hidden;width:85px;height:20px;float:right;background:url(http://cdn.last.fm/widgets/images/en/footer/black.png) no-repeat 0px -20px;text-decoration:none;border:0;&quot; href=&quot;http://www.last.fm/widgets/?colour=black&amp;amp;chartType=recenttracks&amp;amp;user=leniel&amp;amp;chartFriends=&amp;amp;from=code&amp;amp;widget=chart&amp;amp;path=blogger&quot; target=&quot;_blank&quot; title=&quot;Get your own widget&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;width:74px;&quot; class=&quot;lfmView&quot;&gt;&lt;a style=&quot;display:block;overflow:hidden;width:74px;height:20px;background:url(http://cdn.last.fm/widgets/images/en/footer/black.png) no-repeat -85px -20px;text-decoration:none;border:0;&quot; href=&quot;http://www.last.fm/user/leniel/&quot; target=&quot;_blank&quot; title=&quot;View leniel&#39;s profile&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;width:25px;&quot; class=&quot;lfmPopup&quot;&gt;&lt;a style=&quot;display:block;overflow:hidden;width:25px;height:20px;background:url(http://cdn.last.fm/widgets/images/en/footer/black.png) no-repeat -159px -20px;text-decoration:none;border:0;&quot; href=&quot;http://www.last.fm/widgets/popup/?colour=black&amp;amp;chartType=recenttracks&amp;amp;user=leniel&amp;amp;chartFriends=&amp;amp;from=code&amp;amp;widget=chart&amp;amp;path=blogger&amp;amp;resize=1&quot; target=&quot;_blank&quot; title=&quot;Load this chart in a pop up&quot; onclick=&quot;window.open(this.href + &#39;&amp;amp;resize=0&#39;,&#39;lfm_popup&#39;,&#39;height=279,width=234,resizable=yes,scrollbars=yes&#39;); return false;&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;--&gt;
+
+&lt;!--&lt;br/&gt;
+
+My music taste in the last year:
+
+&lt;a target=&quot;_blank&quot; href=&quot;http://www.last.fm/user/leniel&quot; title=&quot;My music tag cloud from Last.fm&quot;&gt;&lt;img src=&quot;http://fxdteam.com/lastcloud/i.php?i=leniel-_-12month-_-black-_-&quot; width=&quot;270&quot; /&gt;&lt;/a&gt; --&gt;
+
+&lt;/center&gt;
+&lt;br/&gt;</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1627,7 +1769,24 @@ which is probably better than having them overflow out of the div.
                   </div>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML4' locked='false' title='' type='HTML' visible='true'>
+              <b:widget id='HTML4' locked='false' title='' type='HTML'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;br/&gt;
+&lt;center&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;ca-pub-8849057428395760&quot;;
+google_ad_host = &quot;pub-1556223355139109&quot;;
+/* 160x600, created 5/8/08 */
+google_ad_slot = &quot;9249356052&quot;;
+google_ad_width = 160;
+google_ad_height = 600;
+//--&gt;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+&lt;/center&gt;</b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
                   <b:if cond='data:title != &quot;&quot;'>
@@ -1641,7 +1800,10 @@ which is probably better than having them overflow out of the div.
                   <b:include name='quickedit'/>
                 </b:includable>
               </b:widget>
-              <b:widget id='HTML8' locked='false' mobile='yes' title='Disqus for Leniel Macaferi&apos;s blog' type='HTML' visible='true'>
+              <b:widget id='HTML8' locked='false' mobile='yes' title='Disqus for Leniel Macaferi&apos;s blog' type='HTML' version='1'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'><![CDATA[<!-- Disqus Widget -->]]></b:widget-setting>
+                </b:widget-settings>
                 <b:includable id='main'>
                   <script type='text/javascript'>
                     var disqus_shortname = &#39;leniel&#39;;
@@ -1661,7 +1823,7 @@ which is probably better than having them overflow out of the div.
                         var bloggerjs = document.createElement(&#39;script&#39;);
                                                                bloggerjs.type = &#39;text/javascript&#39;;
                                                                bloggerjs.async = true;
-                                                               bloggerjs.src = &#39;http://&#39;+disqus_shortname+&#39;.disqus.com/blogger_item.js&#39;;
+                                                               bloggerjs.src = &#39;https://&#39;+disqus_shortname+&#39;.disqus.com/blogger_item.js&#39;;
                                                                (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
                                                                })();
                     </script>
@@ -1674,7 +1836,7 @@ which is probably better than having them overflow out of the div.
                       var bloggerjs = document.createElement(&#39;script&#39;);
                                                              bloggerjs.type = &#39;text/javascript&#39;;
                                                              bloggerjs.async = true;
-                                                             bloggerjs.src = &#39;http://&#39;+disqus_shortname+&#39;.disqus.com/blogger_index.js&#39;;
+                                                             bloggerjs.src = &#39;https://&#39;+disqus_shortname+&#39;.disqus.com/blogger_index.js&#39;;
                                                              (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
                                                              })();
                   </script>
@@ -1716,30 +1878,6 @@ which is probably better than having them overflow out of the div.
     </div>
     <!-- end outer-wrapper -->
     
-    <!-- start Facebook button -->
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = &quot;//connect.facebook.net/en_US/all.js#xfbml=1&quot;;
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));</script>
-    <!-- end Facebook button -->
-    
-    <!-- Share This button -->
-    <script type='text/javascript'>
-      var switchTo5x=false;</script>
-    <script src='http://w.sharethis.com/button/buttons.js' type='text/javascript'/>
-    <script type='text/javascript'>
-      stLight.options({
-        publisher:&#39;a0e1e3a0-77fd-419f-9254-280a46dbc7bd&#39;,
-        publisherGA:&quot;UA-1895588-2&quot;,
-        doNotHash:true,
-        doNotCopy:false,
-        hashAddressBar:false});</script>
-    <!-- end Share This button -->
-    
     <!-- start Google Translate -->
     <script type='text/javascript'>
       function googleTranslateElementInit() {
@@ -1749,36 +1887,15 @@ which is probably better than having them overflow out of the div.
     <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' type='text/javascript'/>
     <!-- end Google Translate -->
     
-    <!-- start Google Custom Search -->
-    <script src='http://www.google.com/jsapi' type='text/javascript'/>
-    <script type='text/javascript'>
-      google.load(&#39;search&#39;, &#39;1&#39;, {language : &#39;en&#39;, style : google.loader.themes.V2_DEFAULT});
-                  google.setOnLoadCallback(function() {
-        var customSearchOptions = {};
-        var imageSearchOptions = {};
-        imageSearchOptions[&#39;layout&#39;] = google.search.ImageSearch.LAYOUT_POPUP;
-                           customSearchOptions[&#39;enableImageSearch&#39;] = true;
-                           customSearchOptions[&#39;imageSearchOptions&#39;] = imageSearchOptions;  var customSearchControl = new google.search.CustomSearchControl(
-                           &#39;007175710259988001729:v4pzgbdlimm&#39;, customSearchOptions);
-                           customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-                           var options = new google.search.DrawOptions();
-                           options.setAutoComplete(true);
-                           customSearchControl.setAutoCompletionId(&#39;007175710259988001729:v4pzgbdlimm+qptype:1&#39;);
-                           options.enableSearchboxOnly(&quot;http://www.google.com/cse?cx=007175710259988001729:v4pzgbdlimm&quot;);
-                           customSearchControl.draw(&#39;cse-search-form&#39;, options);
-                           }, true);
-    </script>
-    <!-- end Google Custom Search -->
-    
     <!-- start Google Analytics -->
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
 
-  ga('create', 'UA-1895588-2', 'auto');
-  ga('send', 'pageview');
+  ga(&#39;create&#39;, &#39;UA-1895588-2&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
 
 </script>
     <!-- end Google Analytics -->
