@@ -16,17 +16,717 @@
     <!-- Google Font API -->
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker:regular' rel='stylesheet' type='text/css'/>
     <!-- Bootstrap -->
-    <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet' type='text/css'/>
     <!-- Custom styles -->
-    <link href='//cdn.rawgit.com/leniel/leniel.net/1f2d1a3f7e9a937a5d801bd0e1ecda18c0b163b4/StyleSheet.min.css' media='all' rel='stylesheet' type='text/css'/>
     <title>
       <data:blog.pageTitle/>
     </title>
     <b:skin><![CDATA[
 
+
+.mobile #sidebar-wrapper {
+Display: none;
+}
+
+/* 
+ * Blogger Template Style
+ * Name:   TicTac (Black)
+ * Author: Leniel Macaferi
+ * URL:    https://leniel.net
+ * Date:   20 December 2007
+ * Updated to external StyleSheet: 31 May 2009
+ * Moved the StyleSheet file to Google Docs on 23 January 2009
+ * Moved the StyleSheet file to GitHub on 1 February 2017
+ * Updated to add mobile version on 10 May 2018
+*/
+
+.comments {
+    margin: 10px;
+}
+
+.crosscol .PageList LI, .footer .PageList LI {
+    padding-right: 0;
+    margin: .6em;
+}
+
+.description
+{
+  font-size:11.5pt;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+html body #outer-wrapper {
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1100px;
+  }
+}
+
+.mobile #sidebar-wrapper {
+    Display: none;
+}
+
+.gsc-search-button {
+    box-sizing: initial;
+}
+
+.gsc-input
+{
+    color:black;
+}
+
+div#ContactForm1 {
+    display: none;
+}
+
+#SkypeButton_Call_lenielmacaferi_1_paraElement {
+    font-size: 0 !important
+}
+
+#SkypeButton_Call_lenielmacaferi_1 img {
+    margin: 16px !important
+}
+
+.post-body a {
+    border: none !important;
+}
+
+
+.mobile .PageList a:link,
+.mobile .PageList a:visited
+{
+color:black;
+}
+
+.PageList a:link {
+    padding: 3px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9em
+}
+
+.PageList a:visited {
+    padding: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.PageList a:hover {
+    padding: 3px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .9em
+}
+
+#consulting {
+    position: absolute;
+    top: 77px;
+    left: 12px;
+    display: inline-block;
+    padding: 3px;
+    background-color: #fff;
+    vertical-align: bottom;
+    text-align: center;
+    line-height: 20px;
+    -moz-transform: skew(-7deg, -7deg);
+    -ms-transform: skew(-7deg, -7deg);
+    -o-transform: skew(-7deg, -7deg);
+    -webkit-transform: skew(-7deg, -7deg);
+    transform: skew(-7deg, -7deg)
+}
+
+#consulting>a {
+    color: #000!important;
+    text-decoration: none;
+    font-size: 14px
+}
+
+.sidebar-buttons {
+    margin-bottom: 5px
+}
+
+.about-me a {
+    border-bottom: 2px dotted #000;
+    color: #000;
+    text-decoration: none;
+    line-height: 2
+}
+
+blockquote {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 60px;
+    padding-top: 13px;
+    padding-right: 0;
+    padding-bottom: 0;
+    background: url(https://www.blogblog.com/tictac_blue/quotes.gif) no-repeat top left;
+    color: #666;
+    text-indent: 40px;
+    font-style: italic;
+    font-size: 100%;
+    padding:
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted;
+    font-style: normal;
+    cursor: help
+}
+
+pre {
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: pre-wrap;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word
+}
+
+pre span.toc {
+    font-size: 100%;
+    font-family: "Lucida Console", "Bitstream Vera Sans Mono", "Andale Mono", "Lucida Grande";
+    line-height: 200%
+}
+
+hr {}
+
+img {
+    border: none
+}
+
+ul {
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 0;
+    list-style: none
+}
+
+li {
+    margin-bottom: 3px;
+    padding-left: 14px
+}
+
+#sidebar {
+    float: right;
+    overflow: hidden;
+    margin: 0;
+    padding: 2px 0 0 0;
+    width: 270px;
+    border-left: 1px dotted #000;
+    color: #000;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 85%;
+    line-height: 1.4em
+}
+
+#header-wrapper {
+    background: url(https://lh5.googleusercontent.com/-9vOqjUPtb5Y/UT5iN4XfG1I/AAAAAAAACls/9zuAB7tI4r8/s800/2187931461_09e72e0b17_o.png) no-repeat top;
+    background-size: 100%;
+}
+
+#header {
+    color: #fff
+}
+
+#header h1 {
+    display: inline;
+    -webkit-text-shadow: #4f73b6 2px 2px 2px;
+    text-shadow: #4f73b6 2px 2px 2px;
+    font-size: 200%;
+    font-family: 'Permanent Marker', Arial
+}
+
+#header h1 a {
+    color: #fff;
+    text-decoration: none
+}
+
+blink a {
+    color: #fff;
+    text-decoration: none
+}
+
+h2 {
+    margin: 1.5em 0 .75em;
+    color: #666;
+    font: normal normal 95% Arial, sans-serif
+}
+
+h2 a {
+    color: #000;
+    text-decoration: none
+}
+
+h4 {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 13pt
+}
+
+h2.date-header {
+    margin: 0;
+    padding: 0
+}
+
+h2.post-author {
+    margin: 0 0 .5em;
+    padding-top: 0
+}
+
+.byline-author {
+    margin: 0;
+    padding: 0 0 0 0;
+    color: #666
+}
+
+.post {
+    margin: 0 0 1.5em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 1px dotted #000
+}
+
+.page-body {
+    margin-top: -20px
+}
+
+.post-body a {
+    border-bottom: 1px dotted;
+    text-decoration: none
+}
+
+a img {
+    border: none;
+    vertical-align: top
+}
+
+.post ol {
+    float: left;
+    margin-top: inherit;
+    margin-bottom: 1em;
+    margin-left: 0;
+    padding-left: 0;
+    width: 625px;
+    list-style-position: outside;
+    list-style-type: decimal;
+    text-indent: 0
+}
+
+.post ol li {
+    margin-top: 1em;
+    margin-left: 25px;
+    padding: 0;
+    list-style-position: outside;
+    list-style-type: decimal;
+    text-indent: 0;
+    font-weight: normal
+}
+
+.post ul li {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: circle
+}
+
+.post-body {
+    margin-right: 4px;
+    padding-top: 30px
+}
+
+.post-body p {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.post h3 {
+    margin: 3px 0 0 0;
+    padding: 0;
+    color: #c60;
+    font-weight: normal;
+    font-size: 160%;
+    line-height: 1.2em
+}
+
+.post h3 a,
+.post h3 a:visited,
+.post h3 strong {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #c60;
+    text-decoration: none;
+    font-weight: normal
+}
+
+.post h3 strong,
+.post h3 a:hover {
+    color: #333
+}
+
+.post-footer {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    font-size: 100%
+}
+
+.post img.imgleft {
+    float: left;
+    padding-right: 7px;
+    border: 0
+}
+
+.post img.imgright {
+    float: right;
+    padding-right: 7px;
+    padding-left: 7px;
+    border: 0
+}
+
+.feed-links {
+    clear: both;
+    line-height: 2.5em
+}
+
+.sidebar h2 {
+    margin: -4px 0 0 0;
+    padding: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: #000;
+    font: normal bold 130% 'Lucida Grande', 'Trebuchet MS'
+}
+
+.sidebar .widget {
+    margin-top: 0;
+    padding: 4px 0 0 7px
+}
+
+.sidebar li {
+    margin-left: -10px
+}
+
+.profile-textblock {
+    clear: both;
+    margin-left: 0
+}
+
+.profile-img {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0 solid #ddd
+}
+
+.clear {
+    clear: both
+}
+
+#footer-wrapper {
+    font-size: 85%
+}
+
+body#layout #outer-wrapper,
+body#layout #main,
+body#layout #sidebar {
+    margin-top: 0;
+    padding-top: 0
+}
+
+body#layout #sidebar {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+    padding-top: 0
+}
+
+body#layout #header,
+body#layout #footer,
+body#layout #main {
+    padding: 0
+}
+
+body#layout #content-wrapper {
+    margin: 0;
+    padding: 0
+}
+
+#Feed1_feedItemListDisplay {
+    margin-top: 10px;
+    margin-bottom: .1em;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 9pt
+}
+
+#Feed1_feedItemListDisplay ul {
+    margin-left: 0;
+    list-style-type: none;
+    font-size: 9pt
+}
+
+#Feed1_feedItemListDisplay li {
+    margin-top: 10px;
+    margin-bottom: .1em;
+    margin-left: 0;
+    padding-left: 0
+}
+
+#labelCloud {
+    text-align: center;
+    font-family: arial, sans-serif
+}
+
+#labelCloud .label-cloud li {
+    display: inline;
+    margin: 0;
+    padding: 0 5px;
+    border: 0!important;
+    background-image: none!important;
+    vertical-align: baseline!important
+}
+
+#labelCloud ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none
+}
+
+#labelCloud a img {
+    display: inline;
+    margin: 0 0 0 3px;
+    padding: 0;
+    border: 0
+}
+
+#labelCloud a {
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.5em
+}
+
+#labelCloud a:hover {
+    background: #ddd;
+    color: #f60;
+    text-decoration: none
+}
+
+#labelCloud li a {}
+
+#labelCloud .label-cloud {}
+
+#labelCloud .label-count {
+    padding-left: .2em;
+    color: #000;
+    font-size: 9px
+}
+
+#labelCloud .label-cloud li:before {
+    content: ""!important
+}
+
+table.custom1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    border-collapse: collapse;
+    border-style: solid;
+    border-top: solid 1px #000;
+    border-right: 0;
+    border-bottom: solid 1px #000;
+    border-left: 0
+}
+
+table.custom1 th {
+    padding: 2px 0 4px 4px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    color: #000;
+    text-align: left;
+    font-weight: bold
+}
+
+table.custom1 td {
+    padding: 4px;
+    border-width: 0 0 0 0;
+    border-style: solid solid solid solid;
+    background-color: #fff
+}
+
+table.custom2 {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    border: 1px solid #000;
+    border-spacing: 1px;
+    border-collapse: collapse
+}
+
+table.custom2 th {
+    padding: 4px;
+    border: 1px solid gray;
+    text-align: left
+}
+
+table.custom2 td {
+    padding: 4px;
+    border: 1px solid gray;
+    background-color: #f9f9f9
+}
+
+table.custom3 {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    border: 1px solid #000;
+    border-spacing: 1px;
+    border-collapse: collapse
+}
+
+table.custom3 tr {
+    padding: 2px 0 4px 4px;
+    border: 0;
+    text-align: left
+}
+
+table.custom3 th {
+    padding: 4px;
+    border: 1px solid #000;
+    text-align: left;
+    font-weight: normal
+}
+
+table.custom3 td {
+    padding: 4px;
+    border: 1px solid #000
+}
+
+div#google_translate_element {
+    float: right;
+}
+
+ul.gbw {
+    margin: 0;
+    padding: 0;
+    height: auto
+}
+
+ul.gbw li {
+    float: left;
+    overflow: hidden;
+    margin: 1px 0 1px 0;
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dotted #ddd;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 12px!important;
+    font-family: "lucida grande", lucida, tahoma, helvetica, arial, sans-serif!important
+}
+
+ul.gbw span.gbw-meta {
+    display: block;
+    margin: 3px 0 0;
+    color: #000;
+    font-size: 80%
+}
+
+ul.gbw span.gbw-meta a {
+    color: blue;
+    text-decoration: none
+}
+
+ul.gbw span.gbw-meta a:hover {
+    text-decoration: underline
+}
+
+ul.gbw a.gbw-link {}
+
+ul.gbw a.gbw-at {}
+
+ul.gbw a.gbw-hashtag {}
+
+#plusone_post {
+    display: inline-block;
+    padding-top: 3px;
+    padding-left: 90px;
+    width: 82px;
+    height: 20px;
+    vertical-align: bottom
+}
+
+#plusone {
+    margin-right: -17px
+}
+
+.PlusOne {
+    width: 83px;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse {
+    border: 0!important;
+    background-color: transparent!important
+}
+
+input.gsc-search-button:hover {
+    background-image: url('https://lh5.googleusercontent.com/--LLITRfEbPA/T2SqtSZbqdI/AAAAAAAABbI/k5_wbKazlzY/s800/search_box_icon_black.png');
+    background-position: center center!important;
+    background-repeat: no-repeat
+}
+
+.nr_title {
+    padding: 8px 0 15px 30px!important;
+    background: url("https://www.blogblog.com/tictac_blue/bubbles.gif") no-repeat scroll 0 0 transparent;
+    color: #666!important
+}
+
+.time {
+    display: inline-block;
+    padding: 7px;
+    background-color: #000;
+    color: #fff;
+    color: #ff0;
+    font-weight: bold
+}
+
+.nolink {
+    border-bottom: 0!important;
+    text-decoration: none
+}
+
+.mobile .widget.Header {
+    background: url("https://lh3.googleusercontent.com/-9vOqjUPtb5Y/UT5iN4XfG1I/AAAAAAAACls/9zuAB7tI4r8/w1600-h482-no/2187931461_09e72e0b17_o.png") repeat scroll 0 0 transparent;
+    margin-top: 50px;
+}
+
+
     ]]></b:skin>
     <!-- jQuery -->
-    <script src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/>
+    <script crossorigin='anonymous' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' src='https://code.jquery.com/jquery-3.3.1.slim.min.js'/>
+<script crossorigin='anonymous' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'/>
+<script crossorigin='anonymous' integrity='sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T' src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'/>
+ 
     <script type='text/javascript'>
       $(document).ready(function()
                         {
@@ -44,7 +744,6 @@
                                                                         $(&quot;#wordCount&quot;).text(count);
                                                                         });
     </script>
-&lt;script type=&#39;text/javascript&#39; src=&#39;//platform-api.sharethis.com/js/sharethis.js#property=5af1e2f065adf7001138980c&amp;product=social-ab&#39; async=&#39;async&#39;&gt;&lt;/script&gt;
   
 <!-- start Google AdSense -->
 <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
@@ -63,12 +762,12 @@
         .post {border-bottom:0;}
       </style>
     </b:if>
-    <div id='outer-wrapper'>
-      <div id='wrap2'>
+    <div class='container-fluid' id='outer-wrapper'>
         <!-- skip links for text browsers -->
         <!--<span id='skiplinks' style='display:none;'>
 <a href='#main'>skip to main </a> | <a href='#sidebar'>skip to sidebar</a>
 </span> -->
+
         <div id='header-wrapper'>
           <b:section class='header' id='header' maxwidgets='1' showaddelement='false'>
             <b:widget id='Header1' locked='false' mobile='yes' title='Leniel Macaferi&apos;s blog (Header)' type='Header' version='1'>
@@ -101,7 +800,7 @@ which is probably better than having them overflow out of the div.
 -->
                     <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
                       <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: right; &quot;                        + &quot;min-height: &quot; + data:height + &quot;px;&quot;                        + &quot;_height: &quot; + data:height + &quot;px;&quot;                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
-                        <div class='titlewrapper' style='background: transparent'>
+                        <div class='title-wrapper' style='background: transparent'>
                           <h1 class='title' style='background: transparent; border-width: 0px'>
                             <b:include name='title'/>
                           </h1>
@@ -110,7 +809,7 @@ which is probably better than having them overflow out of the div.
                       </div>
                       <b:else/>
                       <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: left; &quot;                        + &quot;min-height: &quot; + data:height + &quot;px;&quot;                        + &quot;_height: &quot; + data:height + &quot;px;&quot;                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
-                        <div class='titlewrapper' style='background: transparent'>
+                        <div class='title-wrapper' style='background: transparent'>
                           <h1 class='title' style='background: transparent; border-width: 0px'>
                             <b:include name='title'/>
                           </h1>
@@ -121,17 +820,21 @@ which is probably better than having them overflow out of the div.
                   </b:if>
                   <b:else/>
                   <!--No header image -->
-                  <div class='titlewrapper'>
-                    <table style='table-layout:fixed;padding-left:0px' width='100%'>
-                      <tr>
-                        <td>
-                          <h1 class='title'>
-                            <b:include name='title'/>
-                          </h1>
-                        </td>
-                        <td align='right' valign='bottom'>
-                          &lt;!-- Google CSE Search Box Begins  --&gt;
-                          <!-- start Google Custom Search -->
+                  <div class='container title-wrapper'>
+                    <div class='row'>&amp;#160;</div>
+                    <div class='row justify-content-center align-items-center'>
+                      <div class='col-sm-5 offset-sm-1'>
+                        <h1 class='title'><b:include name='title'/></h1>
+                      </div>
+                      <div class='col-sm-5'>
+                        </div>
+                      </div>
+                      <div class='row justify-content-center'>
+                      <div class='col-sm-5 offset-sm-1'>
+                          <i class='description'><b:include name='description'/></i>
+                    	</div>
+                        <div class='col-sm-5'>
+<!-- start Google Custom Search -->
     <script>
   (function() {
     var cx = &#39;007175710259988001729:v4pzgbdlimm&#39;;
@@ -145,16 +848,8 @@ which is probably better than having them overflow out of the div.
 </script>
 <gcse:searchbox-only/>
     <!-- end Google Custom Search -->
-                          &lt;!-- Google CSE Search Box Ends --&gt;
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan='2'>
-                          <br/>
-                          <b:include name='description'/>
-                        </td>
-                      </tr>
-                    </table>
+</div>
+                    </div>
                   </div>
                 </b:if>
               </b:includable>
@@ -174,7 +869,7 @@ which is probably better than having them overflow out of the div.
           </b:section>
           <div id='crosscol-wrapper' style='text-align:center;'>
             <b:section class='crosscol' id='crosscol' showaddelement='no'>
-              <b:widget id='PageList1' locked='false' mobile='yes' title='' type='PageList'>
+              <b:widget id='PageList1' locked='false' mobile='yes' title='' type='PageList' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='pageListJson'><![CDATA[{'5094743746631900240': {'href': 'http://www.leniel.net/p/consultant.html', 'title': 'Consultant', 'position': 0}, '8078830824696106693': {'href': 'http://www.leniel.net/p/consultor.html', 'title': 'Consultor', 'position': 1}, 'link0': {'href': 'http://www.proz.com/translator/849397', 'title': 'Translator', 'position': 2}, '7784578173060177487': {'href': 'http://www.leniel.net/p/contact-me.html', 'title': 'Contact', 'position': 3}}]]></b:widget-setting>
                   <b:widget-setting name='homeTitle'>Home</b:widget-setting>
@@ -187,33 +882,43 @@ which is probably better than having them overflow out of the div.
                   </b:if>
                   <div class='widget-content'>
                     <b:if cond='data:mobile'>
-                      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
-                        <b:loop values='data:links' var='link'>
-                          <b:if cond='data:link.isCurrentPage'>
-                            <option expr:value='data:link.href' selected='selected'>
-                              <data:link.title/>
-                            </option>
-                            <b:else/>
-                            <option expr:value='data:link.href'>
-                              <data:link.title/>
-                            </option>
-                          </b:if>
-                        </b:loop>
-                      </select>
-                      <span class='pagelist-arrow'>
-                        &amp;#9660;
-                      </span>
+                      <nav class='navbar navbar-expand-lg navbar-light bg-faded'>
+  <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarSupportedContent' data-toggle='collapse' type='button'>
+    <span class='navbar-toggler-icon'/>
+  </button>
+
+  <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+    <ul class='navbar-nav mx-auto'>
+
+      <b:loop values='data:links' var='link'>
+                                            <b:if cond='data:link.isCurrentPage'>
+      											<li class='nav-item active text-center'>
+                                                <a class='dropdown-item' expr:href='data:link.href'>
+                                                    <data:link.title/>
+                                                </a>
+      											</li>
+                                                <b:else/>
+												<li class='nav-item text-center'>
+                                                <a class='dropdown-item' expr:href='data:link.href'>
+                                                    <data:link.title/>
+                                                </a>
+      											</li>
+                                            </b:if>
+                                        </b:loop>
+    </ul>
+  </div>
+</nav>
                       <b:else/>
-                      <ul>
+                      <ul class='nav list-inline justify-content-end'>
                         <b:loop values='data:links' var='link'>
                           <b:if cond='data:link.isCurrentPage'>
-                            <li class='selected'>
+                            <li class='selected nav-item'>
                               <a expr:href='data:link.href'>
                                 <data:link.title/>
                               </a>
                             </li>
                             <b:else/>
-                            <li>
+                            <li class='nav-item'>
                               <a expr:href='data:link.href'>
                                 <data:link.title/>
                               </a>
@@ -222,15 +927,15 @@ which is probably better than having them overflow out of the div.
                         </b:loop>
                       </ul>
                     </b:if>
-                    <b:include name='quickedit'/>
                   </div>
                 </b:includable>
               </b:widget>
             </b:section>
           </div>
         </div>
-        <div id='content-wrapper'>
-          <div id='main-wrapper'>
+        <div class='container=fluid' id='content-wrapper'>
+			<div class='row no-gutters'>
+          <div class='col-sm-9' id='main-wrapper'>
             <b:section class='main' id='main' preferred='yes' showaddelement='no'>
               <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
                 <b:widget-settings>
@@ -839,7 +1544,12 @@ which is probably better than having them overflow out of the div.
                     <b:if cond='data:blog.url != data:blog.homepageUrl'>
                       <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                         <!-- Google Translate element -->
-                        <div id='google_translate_element'/>
+                        <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, gaTrack: true, gaId: 'UA-1895588-2'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
                         <span class='byline-author'>
                           Word count: 
                         </span>
@@ -869,25 +1579,7 @@ which is probably better than having them overflow out of the div.
                         <br/>
                         <center>
                           <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                            <!-- start Star Rating -->
-                            <b:if cond='data:top.showStars'>
-                              <script src='http://www.google.com/jsapi' type='text/javascript'/>
-                              <script type='text/javascript'>
-                                google.load(&quot;annotations&quot;, &quot;1&quot;);
-                                function initialize() {
-                                  google.annotations.setApplicationId(<data:top.blogspotReviews/>);
-                                  google.annotations.createAll();
-                                  google.annotations.fetch();
-                                }
-                                google.setOnLoadCallback(initialize);
-                              </script>
-                            </b:if>
-                            <span class='star-ratings'>
-                              <b:if cond='data:top.showStars'>
-                                <div expr:g:background-color='data:backgroundColor' expr:g:text-color='data:textColor' expr:g:url='data:post.absoluteUrl' g:height='42' g:type='RatingPanel' g:width='180'/>
-                              </b:if>
-                            </span>
-                            <!-- end Star Rating -->
+                      
                           </b:if>
                         </center>
                         <p class='post-footer-line post-footer-line-1'>
@@ -1254,7 +1946,7 @@ which is probably better than having them overflow out of the div.
               </b:widget>
             </b:section>
           </div>
-          <div id='sidebar-wrapper'>
+          <div class='col-sm-3' id='sidebar-wrapper'>
             <b:section class='sidebar' id='sidebar' preferred='no' showaddelement='yes'>
               <b:widget id='ContactForm1' locked='false' mobile='yes' title='Contact Form' type='ContactForm' version='1'>
                 <b:includable id='main'>
@@ -1851,10 +2543,25 @@ src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
         </div>
         <!-- end content-wrapper -->
         <div id='footer-wrapper'>
-          <b:section class='footer' id='footer'/>
-          <table>
-            <tr>
-              <td style='width:25%'>
+          <b:section class='footer' id='footer'>
+            <b:widget id='HTML6' locked='false' mobile='yes' title='' type='HTML'>
+              <b:widget-settings>
+                <b:widget-setting name='content'><![CDATA[<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5af1e2f065adf7001138980c&product=social-ab' async='async'></script>]]></b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  </div>
+</b:includable>
+            </b:widget>
+          </b:section>
+
+<div class="container">
+<div class="row">
+              <div class="col-sm-3">
                 &#169; 2007 - 
                 <script type='text/javascript'>
                   var dteNow = new Date();
@@ -1862,30 +2569,22 @@ src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
                   document.write(intYear);
                 </script>
                 Leniel Macaferi
-              </td>
-              <td align='right' style='width:75%'>
+              </div>
+              <div class="col-sm-7">
                 All work provided in this blog is licensed under a Creative Commons Attribution-Share Alike license.
-              </td>
-              <td>
+              </div>
+              <div class="col-sm-2">
                 <a href='http://creativecommons.org/licenses/by-sa/3.0/us/' rel='license' target='_blank'>
                   <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png' style='border-width:0'/>
                 </a>
-              </td>
-            </tr>
-          </table>
-        </div>
+              </div>
+            </div>
+ </div>
+          </div>
       </div>
-    </div>
+
+      </div>
     <!-- end outer-wrapper -->
-    
-    <!-- start Google Translate -->
-    <script type='text/javascript'>
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: &#39;en&#39;, layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, gaTrack: true, gaId: &#39;UA-1895588-2&#39;}, &#39;google_translate_element&#39;);
-                                              }
-    </script>
-    <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' type='text/javascript'/>
-    <!-- end Google Translate -->
     
     <!-- start Google Analytics -->
     <script>
