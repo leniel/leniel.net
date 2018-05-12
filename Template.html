@@ -37,6 +37,12 @@
  * Updated to add mobile version on 10 May 2018
 */
 
+.social-bar
+{
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+
 .github
 {
 margin-top:5px;
@@ -238,6 +244,7 @@ li {
 #header-wrapper {
     background: url(https://lh5.googleusercontent.com/-9vOqjUPtb5Y/UT5iN4XfG1I/AAAAAAAACls/9zuAB7tI4r8/s800/2187931461_09e72e0b17_o.png) no-repeat top;
     background-size: 100%;
+	margin-bottom:5px;
 }
 
 #header {
@@ -901,8 +908,8 @@ which is probably better than having them overflow out of the div.
       </div>
     </div>
     <div class='container=fluid' id='content-wrapper'>
-      <div class='row no-gutters'>
-        <div class='col-md-9' id='main-wrapper'>
+      <div class='row'>
+        <div class='col-md-8' id='main-wrapper'>
           <b:section class='main' id='main' preferred='yes' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
               <b:widget-settings>
@@ -1879,7 +1886,7 @@ which is probably better than having them overflow out of the div.
             </b:widget>
           </b:section>
         </div>
-        <div class='col-md-3' id='sidebar-wrapper'>
+        <div class='col-md-4' id='sidebar-wrapper'>
           <b:section class='sidebar' id='sidebar' preferred='no' showaddelement='yes'>
             <b:widget id='ContactForm1' locked='false' mobile='yes' title='Contact Form' type='ContactForm' version='1'>
               <b:includable id='main'>
@@ -2000,27 +2007,54 @@ which is probably better than having them overflow out of the div.
             </b:widget>
             <b:widget id='HTML1' locked='false' title='' type='HTML' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='content'>&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;sidebar-buttons&quot;&gt; &lt;tr&gt; &lt;td&gt; &lt;a href=&quot;https://plus.google.com/114767333676393021366&quot;
-                  target=&quot;_blank&quot; title=&quot;Google profile&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Google profile&quot; src=&quot;https://lh4.googleusercontent.com/-SRK499E5wuc/UHZROYyshxI/AAAAAAAACY0/TdqeT1V_ixw/s32/GooglePlusIcon.png&quot;
-                  height=&quot;32&quot; width=&quot;32&quot; /&gt;&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;http://www.linkedin.com/in/leniel&quot;
-                  target=&quot;_blank&quot; title=&quot;LinkedIn profile&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;LinkedIn profile&quot; src=&quot;https://lh5.googleusercontent.com/--_6K_nNMsHo/UHZKRIGq5bI/AAAAAAAACYI/Hx9E141K0Aw/s32/LinkedInLogo.png&quot;
-                  height=&quot;32&quot; width=&quot;32&quot; /&gt;&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;http://careers.stackoverflow.com/leniel&quot;
-                  target=&quot;_blank&quot; title=&quot;CV at StackOverflow&quot;&gt; &lt;img border=&quot;0&quot; width=&quot;32&quot; alt=&quot;View my CV at StackOverflow&quot;
-                  src=&quot;https://lh6.googleusercontent.com/-BTRuSnfiEP4/UHZE3lUtguI/AAAAAAAACW8/zvfin3ijEK4/s32/StackOverflowIcon.png&quot;
-                  height=&quot;32&quot; /&gt; &lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;http://www.twitter.com/johnleniel&quot; target=&quot;_blank&quot;
-                  title=&quot;Follow me on Twitter&quot;&gt; &lt;img width=&quot;32&quot; height=&quot;32&quot; src=&quot;https://lh5.googleusercontent.com/-anhT8UAyuNk/UHZFybOlhvI/AAAAAAAACXU/LUpAsjOCPNo/s32/TwitterIcon.png&quot;
-                  alt=&quot;Follow me on Twitter&quot; /&gt; &lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;http://feeds.feedburner.com/leniel&quot;
-                  rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;RSS feed&quot;&gt; &lt;img alt=&quot;Feed icon&quot; src=&quot;https://lh5.googleusercontent.com/-9ParU76fQIs/UHZGUtuMsqI/AAAAAAAACXo/tEMCEEJ2k8A/s32/RSSFeedIcon.png&quot;
-                  width=&quot;32&quot; height=&quot;32&quot;/&gt; &lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;http://feedproxy.google.com/leniel&quot;&gt;
-                  &lt;img width=&quot;88&quot; style=&quot;border:0&quot; alt=&quot;Feedburner readers count&quot; src=&quot;http://feedproxy.google.com/~fc/leniel?bg=FFFFFF&amp;amp;fg=000000&amp;amp;anim=1&quot;
-                  height=&quot;26&quot; /&gt; &lt;/a&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;!-- &lt;h2&gt; &lt;a href=&quot;http://www.google.com/profiles/leniel&quot;
+                <b:widget-setting name='content'>&lt;div class=&quot;row no-gutters social-bar&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;a href=&quot;https://plus.google.com/114767333676393021366&quot; target=&quot;_blank&quot; title=&quot;Google profile&quot;&gt;
+            &lt;img border=&quot;0&quot; alt=&quot;Google profile&quot; src=&quot;https://lh4.googleusercontent.com/-SRK499E5wuc/UHZROYyshxI/AAAAAAAACY0/TdqeT1V_ixw/s32/GooglePlusIcon.png&quot;  height=&quot;32&quot; width=&quot;32&quot; /&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;a href=&quot;http://www.linkedin.com/in/leniel&quot; target=&quot;_blank&quot; title=&quot;LinkedIn profile&quot;&gt;
+            &lt;img border=&quot;0&quot; alt=&quot;LinkedIn profile&quot; src=&quot;https://lh5.googleusercontent.com/--_6K_nNMsHo/UHZKRIGq5bI/AAAAAAAACYI/Hx9E141K0Aw/s32/LinkedInLogo.png&quot;
+                height=&quot;32&quot; width=&quot;32&quot; /&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;a href=&quot;http://careers.stackoverflow.com/leniel&quot; target=&quot;_blank&quot; title=&quot;CV at StackOverflow&quot;&gt;
+            &lt;img border=&quot;0&quot; width=&quot;32&quot; alt=&quot;View my CV at StackOverflow&quot; src=&quot;https://lh6.googleusercontent.com/-BTRuSnfiEP4/UHZE3lUtguI/AAAAAAAACW8/zvfin3ijEK4/s32/StackOverflowIcon.png&quot; height=&quot;32&quot; /&gt; &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;a href=&quot;http://www.twitter.com/johnleniel&quot; target=&quot;_blank&quot; title=&quot;Follow me on Twitter&quot;&gt;
+            &lt;img width=&quot;32&quot; height=&quot;32&quot; src=&quot;https://lh5.googleusercontent.com/-anhT8UAyuNk/UHZFybOlhvI/AAAAAAAACXU/LUpAsjOCPNo/s32/TwitterIcon.png&quot;
+                alt=&quot;Follow me on Twitter&quot; /&gt; &lt;/a&gt;
+        &lt;/div&gt;
+
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;a href=&quot;http://feeds.feedburner.com/leniel&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;RSS feed&quot;&gt;
+                    &lt;img alt=&quot;Feed icon&quot; src=&quot;https://lh5.googleusercontent.com/-9ParU76fQIs/UHZGUtuMsqI/AAAAAAAACXo/tEMCEEJ2k8A/s32/RSSFeedIcon.png&quot;
+                        width=&quot;32&quot; height=&quot;32&quot; /&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;a href=&quot;http://feedproxy.google.com/leniel&quot;&gt;
+                    &lt;img width=&quot;88&quot; style=&quot;border:0&quot; alt=&quot;Feedburner readers count&quot; src=&quot;http://feedproxy.google.com/~fc/leniel?bg=FFFFFF&amp;amp;fg=000000&amp;amp;anim=1&quot;
+                        height=&quot;26&quot; /&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- &lt;h2&gt; &lt;a href=&quot;http://www.google.com/profiles/leniel&quot;
                   target=&quot;_blank&quot;&gt;About me &lt;/a&gt; &lt;/h2&gt; &lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot;
                   target=&quot;_blank&quot;&gt; &lt;img border=&quot;0&quot; alt=&quot;Me&quot; width=&quot;128&quot; src=&quot;http://www.gravatar.com/avatar/296f29c92c1561c79e034df64dc19f56?s=128&amp;d=identicon&amp;r=PG&quot;
                   height=&quot;128&quot; align=&quot;right&quot; /&gt; &lt;/a&gt; &lt;div class=&quot;about-me&quot;&gt; &lt;a href=&quot;http://jes4us.blogspot.com&quot;
                   target=&quot;_blank&quot;&gt;Jesus Christ follower&lt;/a&gt; and computer engineer.&lt;br/&gt;&lt;br/&gt; &lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot;
                   target=&quot;_blank&quot;&gt;Software engineering&lt;/a&gt; and &lt;a href=&quot;http://www.last.fm/user/leniel&quot; target=&quot;_blank&quot;&gt;Music&lt;/a&gt;
-                  lover! &lt;/div&gt;--&gt; &lt;!--&lt;p class=&quot;hireme&quot;&gt; &lt;a href=&quot;http://www.leniel.net/p/consultant.html&quot;&gt;&lt;b&gt;HIRE
-                  ME!&lt;/b&gt; &lt;/a&gt; &lt;/p&gt;--&gt;</b:widget-setting>
+                  lover! &lt;/div&gt;--&gt;
+        &lt;!--&lt;p class=&quot;hireme&quot;&gt; &lt;a href=&quot;http://www.leniel.net/p/consultant.html&quot;&gt;&lt;b&gt;HIRE ME!&lt;/b&gt; &lt;/a&gt; &lt;/p&gt;--&gt;</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
                 <!-- only display title if it's non-empty -->
@@ -2036,11 +2070,13 @@ which is probably better than having them overflow out of the div.
             </b:widget>
             <b:widget id='HTML5' locked='false' title='' type='HTML' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='content'>&lt;!-- Place this tag where you want the badgev2 to render. --&gt; &lt;div class=&quot;g-person&quot; data-width=&quot;260&quot;
+                <b:widget-setting name='content'>&lt;center&gt;
+&lt;!-- Place this tag where you want the badgev2 to render. --&gt; &lt;div class=&quot;g-person&quot; data-width=&quot;260&quot;
                   data-href=&quot;//plus.google.com/114767333676393021366&quot; data-showcoverphoto=&quot;false&quot; data-rel=&quot;author&quot;&gt;&lt;/div&gt;
                   &lt;!-- Place this tag after the last badgev2 tag. --&gt; &lt;script type=&quot;text/javascript&quot;&gt; (function()
                   { var po = document.createElement(&#39;script&#39;); po.type = &#39;text/javascript&#39;; po.async = true; po.src = &#39;https://apis.google.com/js/plusone.js&#39;;
-                  var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(po, s); })(); &lt;/script&gt;</b:widget-setting>
+                  var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(po, s); })(); &lt;/script&gt;
+&lt;/center&gt;</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
                 <!-- only display title if it's non-empty -->
@@ -2479,7 +2515,7 @@ which is probably better than having them overflow out of the div.
 <script type='text/javascript'>
     $(document).ready(function ()
 	{
-        $("#entry_0").focus();
+        $(&quot;#entry_0&quot;).focus();
 
     });
   </script>
