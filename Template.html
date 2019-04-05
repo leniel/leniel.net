@@ -36,16 +36,6 @@
  * Updated to add mobile version on 10 May 2018
 */
 
-
-html body #outer-wrapper {
-    margin: 0 auto;
-}
-
-.mobile .container-fluid
-{
-	padding:0;
-}
-
 #ContactForm1 {
   display:none
   }
@@ -127,6 +117,15 @@ html body #outer-wrapper {
   word-wrap:break-word
   }
   
+  .PageList a:hover {
+  background-color:#fff;
+  color:#000;
+  font-size:.9em;
+  font-weight:700;
+  padding:3px;
+  text-decoration:none
+  }
+  
   .PageList a:link {
   color:#fff;
   font-size:.9em;
@@ -138,15 +137,6 @@ html body #outer-wrapper {
   
   .PageList a:visited {
   color:#fff;
-  font-weight:700;
-  padding:3px;
-  text-decoration:none
-  }
-
-.PageList a:hover {
-  background-color:#fff;
-  color:#000;
-  font-size:.9em;
   font-weight:700;
   padding:3px;
   text-decoration:none
@@ -205,6 +195,10 @@ html body #outer-wrapper {
   margin-top:5px
   }
   
+  .gsc-input,.mobile .PageList a:link,.mobile .PageList a:visited {
+  color:#000
+  }
+  
   .mobile .widget.Header {
   background:url(https://lh3.googleusercontent.com/-9vOqjUPtb5Y/UT5iN4XfG1I/AAAAAAAACls/9zuAB7tI4r8/w1600-h482-no/2187931461_09e72e0b17_o.png) repeat scroll 0 0 transparent;
   margin-top:50px
@@ -219,6 +213,10 @@ html body #outer-wrapper {
   background:url(https://www.blogblog.com/tictac_blue/bubbles.gif) no-repeat scroll 0 0 transparent;
   color:#666!important;
   padding:8px 0 15px 30px !important
+  }
+  
+  .page-body {
+  margin-top:-20px
   }
   
   .post {
@@ -311,6 +309,18 @@ html body #outer-wrapper {
   padding:0
   }
   
+  .profile-img {
+  border:0 solid #ddd;
+  float:left;
+  margin:0;
+  padding:0
+  }
+  
+  .profile-textblock {
+  clear:both;
+  margin-left:0
+  }
+  
   .sidebar .widget {
   margin-top:0;
   padding:0 0 0 7px
@@ -318,7 +328,7 @@ html body #outer-wrapper {
   
   .sidebar h2 {
   color:#000;
-  font:normal bold 120% 'Lucida Grande', 'Trebuchet MS';
+  font:normal bold 130% 'Lucida Grande', 'Trebuchet MS';
   margin:-4px 0 0;
   padding:0
   }
@@ -327,7 +337,9 @@ html body #outer-wrapper {
   margin-left:-10px
   }
   
-
+  .sidebar-buttons {
+  margin-bottom:5px
+  }
   
   .social-bar {
   margin-bottom:7px;
@@ -415,8 +427,18 @@ html body #outer-wrapper {
   margin-bottom:0
   }
   
+  html body #outer-wrapper {
+  margin:0 auto
+  }
+  
   img {
   border:none
+  }
+  
+  input.gsc-search-button:hover {
+  background-image:url(https://lh5.googleusercontent.com/--LLITRfEbPA/T2SqtSZbqdI/AAAAAAAABbI/k5_wbKazlzY/s800/search_box_icon_black.png);
+  background-position:center center!important;
+  background-repeat:no-repeat
   }
   
   li {
@@ -545,8 +567,8 @@ html body #outer-wrapper {
   ul.gbw span.gbw-meta a:hover {
   text-decoration:underline
   }
-
-  @media (min-width:1200px){
+  
+  @media min-width 1200px{
   .container-fluid {
   width:1100px
   }
@@ -579,10 +601,14 @@ html body #outer-wrapper {
     </style>
   </b:if>
   <div class='container-fluid' id='outer-wrapper'>
+    <!-- skip links for text browsers -->
+    <!--<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> | <a href='#sidebar'>skip to sidebar</a>
+</span> -->
 
     <div id='header-wrapper'>
       <b:section class='header' id='header' maxwidgets='1' showaddelement='false'>
-        <b:widget id='Header1' locked='false' mobile='yes' title='Leniel Maccaferri&apos;s blog (Header)' type='Header' version='1'>
+        <b:widget id='Header1' locked='false' mobile='yes' title='Leniel Macaferi&apos;s blog (Header)' type='Header' version='1'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'/>
             <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -634,20 +660,21 @@ which is probably better than having them overflow out of the div.
               <!--No header image -->
               <div class='container title-wrapper'>
                 <div class='row justify-content-center align-items-center'>
-                  <div class='col-md-5'>
+                  <div class='col-md-5 offset-sm-1'>
                     <h1 class='title'>
                       <b:include name='title'/>
                     </h1>
                   </div>
-				  <div class='col-md-4'/>
+                  <div class='col-md-5'>
+                  </div>
                 </div>
-                <div class='row no-gutters justify-content-center'>
-                  <div class='col-md-5 offset-md-1'>
+                <div class='row justify-content-center'>
+                  <div class='col-md-5 offset-sm-1'>
                     <i class='description'>
                       <b:include name='description'/>
                     </i>
                   </div>
-                  <div class='col-md-4 offset-md-1'>
+                  <div class='col-md-5'>
                     <!-- start Google Custom Search -->
                     <script>
                       (function () {
@@ -668,20 +695,22 @@ which is probably better than having them overflow out of the div.
             </b:if>
           </b:includable>
           <b:includable id='description'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-</b:includable>
+            <data:description/>
+          </b:includable>
           <b:includable id='title'>
-  <b:tag cond='data:blog.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a'>
-    <data:title/>
-  </b:tag>
-</b:includable>
+            <b:if cond='data:blog.url == data:blog.homepageUrl'>
+              <data:title/>
+              <b:else/>
+              <a expr:href='data:blog.homepageUrl'>
+                <data:title/>
+              </a>
+            </b:if>
+          </b:includable>
         </b:widget>
       </b:section>
       <div id='crosscol-wrapper' style='text-align:center;'>
         <b:section class='crosscol' id='crosscol' showaddelement='no'>
-          <b:widget id='PageList1' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
+          <b:widget id='PageList1' locked='false' mobile='yes' title='' type='PageList' version='1'>
             <b:widget-settings>
               <b:widget-setting name='pageListJson'><![CDATA[{'5094743746631900240': {'href': 'http://www.leniel.net/p/consultant.html', 'title': 'Consultant', 'position': 0}, '8078830824696106693': {'href': 'http://www.leniel.net/p/consultor.html', 'title': 'Consultor', 'position': 1}, 'link0': {'href': 'http://www.proz.com/translator/849397', 'title': 'Translator', 'position': 2}, '7784578173060177487': {'href': 'http://www.leniel.net/p/contact-me.html', 'title': 'Contact', 'position': 3}}]]></b:widget-setting>
               <b:widget-setting name='homeTitle'>Home</b:widget-setting>
@@ -757,7 +786,6 @@ which is probably better than having them overflow out of the div.
                 <b:widget-setting name='showCommentLink'>false</b:widget-setting>
                 <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
                 <b:widget-setting name='showAuthor'>true</b:widget-setting>
-                <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                 <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
@@ -1345,7 +1373,7 @@ which is probably better than having them overflow out of the div.
                       <b:if cond='data:top.showAuthor'>
                         <span class='byline-author'>
                           <data:top.authorLabel/>
-                          <a href='https://www.blogger.com/profile/17950821674268154143' rel='author' style='text-decoration:none;color:inherit' target='_blank' title='Profile'>
+                          <a href='http://www.google.com/profiles/leniel?rel=author' rel='author' style='text-decoration:none;color:inherit' target='_blank' title='Google+'>
                             <data:post.author/>
                           </a>
                         </span>
@@ -1785,10 +1813,75 @@ which is probably better than having them overflow out of the div.
                 <b:include name='quickedit'/>
               </b:includable>
             </b:widget>
+            <b:widget id='Profile1' locked='false' mobile='only' title='About Me' type='Profile' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='showaboutme'>true</b:widget-setting>
+                <b:widget-setting name='showlocation'>false</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h2>
+                    <data:title/>
+                  </h2>
+                </b:if>
+                <div class='widget-content'>
+                  <b:if cond='data:team == &quot;true&quot;'>
+                    <!-- team blog profile -->
+                    <ul>
+                      <b:loop values='data:authors' var='i'>
+                        <li>
+                          <a class='profile-name-link g-profile' expr:href='data:i.userUrl' expr:style='&quot;background-image: url(&quot; + data:i.profileLogo + &quot;);&quot;'>
+                            <data:i.display-name/>
+                          </a>
+                        </li>
+                      </b:loop>
+                    </ul>
+                    <b:else/>
+                    <!-- normal blog profile -->
+                    <b:if cond='data:photo.url != &quot;&quot;'>
+                      <a expr:href='data:userUrl'>
+                        <img class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/>
+                      </a>
+                    </b:if>
+                    <dl class='profile-datablock'>
+                      <dt class='profile-data'>
+                        <a class='profile-name-link g-profile' expr:href='data:userUrl' expr:style='&quot;background-image: url(&quot; + data:profileLogo + &quot;);&quot;' rel='author'>
+                          <data:displayname/>
+                        </a>
+                        <b:if cond='data:hasgoogleprofile'>
+                          <br/>
+                          <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
+                        </b:if>
+                      </dt>
+                      <b:if cond='data:showlocation == &quot;true&quot;'>
+                        <dd class='profile-data'>
+                          <data:location/>
+                        </dd>
+                      </b:if>
+                      <b:if cond='data:aboutme != &quot;&quot;'>
+                        <dd class='profile-textblock'>
+                          <data:aboutme/>
+                        </dd>
+                      </b:if>
+                    </dl>
+                    <a class='profile-link' expr:href='data:userUrl' rel='author'>
+                      <data:viewProfileMsg/>
+                    </a>
+                  </b:if>
+                  <b:include name='quickedit'/>
+                </div>
+              </b:includable>
+            </b:widget>
             <b:widget id='HTML1' locked='false' title='' type='HTML' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='content'>&lt;div class=&quot;row no-gutters social-bar&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;a href=&quot;https://plus.google.com/114767333676393021366&quot; target=&quot;_blank&quot; title=&quot;Google profile&quot;&gt;
+            &lt;img border=&quot;0&quot; alt=&quot;Google profile&quot; src=&quot;https://lh4.googleusercontent.com/-SRK499E5wuc/UHZROYyshxI/AAAAAAAACY0/TdqeT1V_ixw/s32/GooglePlusIcon.png&quot;  height=&quot;32&quot; width=&quot;32&quot; /&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col&quot;&gt;
         &lt;a href=&quot;http://www.linkedin.com/in/leniel&quot; target=&quot;_blank&quot; title=&quot;LinkedIn profile&quot;&gt;
             &lt;img border=&quot;0&quot; alt=&quot;LinkedIn profile&quot; src=&quot;https://lh5.googleusercontent.com/--_6K_nNMsHo/UHZKRIGq5bI/AAAAAAAACYI/Hx9E141K0Aw/s32/LinkedInLogo.png&quot;
                 height=&quot;32&quot; width=&quot;32&quot; /&gt;
@@ -1819,7 +1912,38 @@ which is probably better than having them overflow out of the div.
                         height=&quot;26&quot; /&gt;
                 &lt;/a&gt;
             &lt;/div&gt;
-        &lt;/div&gt;</b:widget-setting>
+        &lt;/div&gt;
+
+        &lt;!-- &lt;h2&gt; &lt;a href=&quot;http://www.google.com/profiles/leniel&quot;
+                  target=&quot;_blank&quot;&gt;About me &lt;/a&gt; &lt;/h2&gt; &lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot;
+                  target=&quot;_blank&quot;&gt; &lt;img border=&quot;0&quot; alt=&quot;Me&quot; width=&quot;128&quot; src=&quot;http://www.gravatar.com/avatar/296f29c92c1561c79e034df64dc19f56?s=128&amp;d=identicon&amp;r=PG&quot;
+                  height=&quot;128&quot; align=&quot;right&quot; /&gt; &lt;/a&gt; &lt;div class=&quot;about-me&quot;&gt; &lt;a href=&quot;http://jes4us.blogspot.com&quot;
+                  target=&quot;_blank&quot;&gt;Jesus Christ follower&lt;/a&gt; and computer engineer.&lt;br/&gt;&lt;br/&gt; &lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot;
+                  target=&quot;_blank&quot;&gt;Software engineering&lt;/a&gt; and &lt;a href=&quot;http://www.last.fm/user/leniel&quot; target=&quot;_blank&quot;&gt;Music&lt;/a&gt;
+                  lover! &lt;/div&gt;--&gt;
+        &lt;!--&lt;p class=&quot;hireme&quot;&gt; &lt;a href=&quot;http://www.leniel.net/p/consultant.html&quot;&gt;&lt;b&gt;HIRE ME!&lt;/b&gt; &lt;/a&gt; &lt;/p&gt;--&gt;</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h2 class='title'>
+                    <data:title/>
+                  </h2>
+                </b:if>
+                <div class='widget-content'>
+                  <data:content/>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget id='HTML5' locked='false' title='' type='HTML' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>&lt;center&gt;
+&lt;!-- Place this tag where you want the badgev2 to render. --&gt; &lt;div class=&quot;g-person&quot; data-width=&quot;260&quot;
+                  data-href=&quot;//plus.google.com/114767333676393021366&quot; data-showcoverphoto=&quot;false&quot; data-rel=&quot;author&quot;&gt;&lt;/div&gt;
+                  &lt;!-- Place this tag after the last badgev2 tag. --&gt; &lt;script type=&quot;text/javascript&quot;&gt; (function()
+                  { var po = document.createElement(&#39;script&#39;); po.type = &#39;text/javascript&#39;; po.async = true; po.src = &#39;https://apis.google.com/js/plusone.js&#39;;
+                  var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(po, s); })(); &lt;/script&gt;
+&lt;/center&gt;</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
                 <!-- only display title if it's non-empty -->
@@ -1835,11 +1959,9 @@ which is probably better than having them overflow out of the div.
             </b:widget>
             <b:widget id='HTML10' locked='false' title='' type='HTML' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='content'>&lt;br /&gt;
-&lt;div align=&quot;center&quot;&gt;
+                <b:widget-setting name='content'>&lt;div align=&quot;center&quot;&gt;
 &lt;a href=&quot;http://stackoverflow.com/users/114029/leniel-macaferi&quot; target=&quot;_blank&quot;&gt;
 &lt;img src=&quot;http://stackoverflow.com/users/flair/114029.png?theme=clean&quot; width=&quot;208&quot; height=&quot;58&quot; alt=&quot;profile for Leniel Macaferi at Stack Overflow, Q&amp;amp;A for professional and enthusiast programmers&quot; title=&quot;profile for Leniel Macaferi at Stack Overflow, Q&amp;amp;A for professional and enthusiast programmers&quot; /&gt; &lt;/a&gt;
-&lt;br /&gt;&lt;br /&gt;
 &lt;!--GitHub badge--&gt;
 &lt;div class=&#39;github&#39;&gt;
 &lt;iframe src=&quot;https://githubbadge.appspot.com/leniel&quot; style=&quot;border:
@@ -2225,7 +2347,7 @@ which is probably better than having them overflow out of the div.
                 var dteNow = new Date();
                 var intYear = dteNow.getFullYear();
                 document.write(intYear);
-              </script> Leniel Maccaferri
+              </script> Leniel Macaferi
             </div>
             <div class='col-md-8'>
               All work provided in this blog is licensed under a Creative Commons Attribution-Share Alike license.

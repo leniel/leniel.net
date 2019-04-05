@@ -2,7 +2,7 @@
  * Blogger Template Style
  * Name:   TicTac (Black)
  * Author: Leniel Macaferi
- * URL:    http://leniel.net
+ * URL:    https://leniel.net
  * Date:   20 December 2007
  * Updated to external StyleSheet: 31 May 2009
  * Moved the StyleSheet file to Google Docs on 23 January 2009
@@ -166,7 +166,7 @@ blockquote {
     padding-top: 13px;
     padding-right: 0;
     padding-bottom: 0;
-    background: url(http://www.blogblog.com/tictac_blue/quotes.gif) no-repeat top left;
+    background: url(https://www.blogblog.com/tictac_blue/quotes.gif) no-repeat top left;
     color: #666;
     text-indent: 40px;
     font-style: italic;
@@ -252,7 +252,7 @@ li {
     position: relative;
     margin: 0;
     padding: 0;
-    background: url(http://lh5.googleusercontent.com/-9vOqjUPtb5Y/UT5iN4XfG1I/AAAAAAAACls/9zuAB7tI4r8/s800/2187931461_09e72e0b17_o.png) no-repeat top;
+    background: url(https://lh5.googleusercontent.com/-9vOqjUPtb5Y/UT5iN4XfG1I/AAAAAAAACls/9zuAB7tI4r8/s800/2187931461_09e72e0b17_o.png) no-repeat top;
     -moz-background-size: 900px 241px;
     -o-background-size: 900px 241px;
     -webkit-background-size: 900px 241px;
@@ -730,7 +730,7 @@ input.gsc-search-button:hover {
 
 .nr_title {
     padding: 8px 0 15px 30px!important;
-    background: url("http://www.blogblog.com/tictac_blue/bubbles.gif") no-repeat scroll 0 0 transparent;
+    background: url("https://www.blogblog.com/tictac_blue/bubbles.gif") no-repeat scroll 0 0 transparent;
     color: #666!important
 }
 
