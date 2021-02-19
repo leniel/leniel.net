@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Leniel Macaferi's blog - Places I cite on this blog - Google Maps JavaScript API Example: Asynchronous Data Retrieval</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAe3jP_CEXgPbUphzWpjDxDBRvZAgfjzqBu1UEAiE6UpeikbmYYBRR1SjMsBdzJ35QzJVgAbgpE98XEQ"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+
+
+          
+        // Create a base icon for all of our markers that specifies the
+        // shadow, icon dimensions, etc.
+        var baseIcon = new GIcon();
+        baseIcon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+        baseIcon.iconSize = new GSize(20, 34);
+        baseIcon.shadowSize = new GSize(37, 34);
+        baseIcon.iconAnchor = new GPoint(9, 34);
+        baseIcon.infoWindowAnchor = new GPoint(9, 2);
+        baseIcon.infoShadowAnchor = new GPoint(18, 25);
+
+        // Creates a marker whose info window displays the letter corresponding
+        // to the given index.
+        function createMarker(point, index, tooltip, html) {
+          // Create a lettered icon for this point using our icon class
+          var letter = String.fromCharCode("A".charCodeAt(0) + index);
+          var letteredIcon = new GIcon(baseIcon);
+          letteredIcon.image = "http://www.google.com/mapfiles/marker" + letter + ".png";
+
+          // Set up our GMarkerOptions object
+          markerOptions = { icon:letteredIcon, title:tooltip};
+          var marker = new GMarker(point, markerOptions);
+
+          GEvent.addListener(marker, "click", function() {
+            marker.openInfoWindowHtml(html);
+          });
+          return marker;
+        }
+
+
+        var map = new GMap2(document.getElementById("map_canvas"));
+                  map.setCenter(new GLatLng(0,0),0);
+        map.setMapType(G_HYBRID_MAP);
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GMapTypeControl());
+
+        var bounds = new GLatLngBounds();
+
+        <!--  Download the data in data.xml and load it on the map. The format we
+        // expect is:
+        // <markers>
+        //   <marker lat="37.441" lng="-122.141"/>
+        //   <marker lat="37.322" lng="-121.213"/>
+        // </markers>-->
+        GDownloadUrl("googlemap.xml", function(data) {
+          var xml = GXml.parse(data);
+          var markers = xml.documentElement.getElementsByTagName("marker");
+          for (var i = 0; i < markers.length; i++) {
+            var latlng = new GLatLng(parseFloat(markers[i].getAttribute("lat")),
+                                    parseFloat(markers[i].getAttribute("lng")));
+
+
+                            var tooltip = markers[i].getAttribute("tooltip");
+
+           
+              var html = markers[i].getAttribute("html");
+             
+
+              map.addOverlay(createMarker(latlng, i, tooltip, html));
+
+            
+
+              bounds.extend(latlng);
+          }
+        
+            map.setZoom(map.getBoundsZoomLevel(bounds));
+
+            map.setCenter(bounds.getCenter());
+        });
+      }
+    }
+    
+    </script>
+  </head>
+
+  <body onload="initialize()" style="width:265px; height:300px; margin:0px; padding:0px;">
+    <div id="map_canvas" style="float:left; width:265px; height:300px; margin:0px; padding:0px;"></div>
+  </body>
+</html>

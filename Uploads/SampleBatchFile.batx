@@ -1,0 +1,39 @@
+@Echo Off
+::cls
+:Start
+Echo.
+Echo Batch file Menu
+Echo.
+Echo 1 - MinGW
+Echo.
+Echo 2 - SinAn
+Echo.
+Echo 3 - Exit
+Echo.
+set choice=
+set /p choice=Choice: 
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='1' goto MinGW
+if '%choice%'=='2' goto SinAn
+if '%choice%'=='3' goto Exit
+Echo "%choice%" is not valid.
+Echo.
+goto start
+:MinGW
+path=C:\MinGW\bin;%PATH%
+goto end
+:SinAn
+@Echo On
+path=C:\MinGW\bin;%PATH%
+cls
+CD CompCons
+flex -i lexan.lex
+yacc sinan.yacc
+gcc y.tab.c yyerror.c main.c -osinan -lfl
+sinan <factorial.txt
+cd..
+@Echo Off
+goto end
+:Exit
+goto end
+:end
